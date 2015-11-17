@@ -1,0 +1,35 @@
+/* ---- STYLEKIT ---- */
+
+.blue {color: #1b75bc;}
+.white {color: #FFF;}
+
+
+.bg-blue {background-color: #1b75bc;}
+.bg-white {background-color: #FFF;}
+
+
+
+.border-blue {border-color: #1b75bc;}
+.border-white {border-color: #FFF;}
+
+
+/* ---- HEADER ---- */
+
+header {height: 50px;}
+
+nav {}
+	nav ul {display: inline-block}
+		nav ul li {display: inline-block; margin: 0 10px;}
+
+
+/* ---- BOOTSTRAP OVERRIDES ---- */
+a {color: inherit;}
+a:hover {color: inherit;}
+
+
+/* ---- GENERAL STYLINGS ---- */
+section {margin: 5em 0;}
+
+
+
+/* ---- LANDING ---- */
