@@ -3,11 +3,8 @@
 .blue {color: #1b75bc;}
 .white {color: #FFF;}
 
-
 .bg-blue {background-color: #1b75bc;}
 .bg-white {background-color: #FFF;}
-
-
 
 .border-blue {border-color: #1b75bc;}
 .border-white {border-color: #FFF;}
@@ -15,11 +12,13 @@
 
 /* ---- HEADER ---- */
 
-header {height: 50px;}
+header {height: 100px; -moz-border-radius: 50px; -webkit-border-radius: 50px; border-radius: 50px; margin-top: -50px;}
 
-nav {}
+#logo {}
+
+nav {top: 63px; position: relative; font-size: 16px;}
 	nav ul {display: inline-block}
-		nav ul li {display: inline-block; margin: 0 10px;}
+		nav ul li {display: inline-block; margin: 0 30px;}
 
 
 /* ---- BOOTSTRAP OVERRIDES ---- */
@@ -28,8 +27,20 @@ a:hover {color: inherit;}
 
 
 /* ---- GENERAL STYLINGS ---- */
+body {font-family: 'RooneySansLF-Regular';}
 section {margin: 5em 0;}
 
 
 
 /* ---- LANDING ---- */
+
+
+
+/* ---- FONTS ---- */
+@font-face {
+    font-family: 'RooneySansLF-Regular';
+    src: url('../fonts/RooneySansLF-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
