@@ -12,27 +12,120 @@
 
 /* ---- HEADER ---- */
 
-header {height: 100px; -moz-border-radius: 50px; -webkit-border-radius: 50px; border-radius: 50px; margin-top: -50px;}
+header {height: 100px; -moz-border-radius: 50px; -webkit-border-radius: 50px; border-radius: 50px; margin-top: -25px;}
+	header .mask {height: 25px; width: 100%; position: absolute; margin-top: 25px; z-index: -1;}
+	.header.row {margin-top: 25px; height: 75px;}
 
-#logo {}
+	.header.row>div {height: 100%;}
+	
+	#logo {background: url(../images/bout_logo.png) no-repeat; width: 20px; height: 33px; background-size: contain; position: relative; top: 50%; margin-top: -16.5px;}
 
-nav {top: 63px; position: relative; font-size: 16px;}
-	nav ul {display: inline-block}
-		nav ul li {display: inline-block; margin: 0 30px;}
+	nav {position: relative; font-size: 16px; top: 50%; margin-top: -11.25px;}
+		nav ul {display: inline-block; margin: 0; padding: 0;}
+			nav ul li {display: inline-block; margin: 0 25px;}
+
+	#ellipses {position: relative; top: 50%; margin-top: -2px; line-height: 0;}
+		#ellipses .dots>span {display: inline-block; width: 4px; height: 4px; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; background: white;}
 
 
 /* ---- BOOTSTRAP OVERRIDES ---- */
+.mobile-only {display: none;}
+
+@media screen and (max-width: 600px) {
+	.mobile-only {display: block;}
+	.mobile-collapse {display: none;}
+	.col-xxs-12 {width: 100%;}
+
+	.col-xxs-6 {width: 50%;}
+}
+
 a {color: inherit;}
 a:hover {color: inherit;}
-
+.right {float: right;}
+.left {float: left;}
 
 /* ---- GENERAL STYLINGS ---- */
 body {font-family: 'RooneySansLF-Regular';}
 section {margin: 5em 0;}
 
+section h1 {font-size: 80px; color: white; -moz-text-shadow: 3px 5px 8px rgb(102,102,102); -webkit-text-shadow: 3px 5px 8px rgb(102,102,102); text-shadow: 3px 5px 8px rgb(102,102,102); font-weight: bold; margin: 30px 0 60px;}
+section p {font-size: 16px;}
+
+.btn-bout {font-size: 14px; margin: 20px 0; color: white; background-color: #1b75bc; height: 34px; -moz-border-radius: 17px; -webkit-border-radius: 17px; border-radius: 17px; padding: 0 30px; -moz-box-shadow: 0px 1px 3px rgb(102, 102, 102); -webkit-box-shadow: 0px 1px 3px rgb(102, 102, 102); box-shadow: 0px 1px 3px rgb(102, 102, 102);}
+.iPhone {min-height: 564px; width: 275px; background: url(../images/iphone_wireframe.png) no-repeat; background-size: contain;}
+
+input {height: 34px; -moz-border-radius: 17px; -webkit-border-radius: 17px; border-radius: 17px; border: 2px solid; padding: 10px; font-size: 12px;}
+
+/* ---- SOCIAL ---- */
+.social a {background-image: url(../images/social_icons.png); background-repeat: no-repeat;}
+	a#linkedin {background-positon-y: 0;}
+	a#facebook {background-position-y: -120px;}
+	a#twitter {background-position-y: -240px;}
+	a#instagram {background-position-y: -360px;}
+	a#web {background-position-y: -480px;}
 
 
 /* ---- LANDING ---- */
+	section#landing h1 {background: url(../images/bout_full.png) no-repeat; width: 700px; height: 285px; margin: 0 auto; background-size: contain;}
+	section#landing h2 {margin: 20px 0 40px;}
+
+	.vid-container {margin: 40px auto 0;}
+	.vid-container video {width: 100%;}
+
+
+/* ---- MISSION ---- */
+	#mission .thumbnail {margin: 20px 0; border: none;}
+
+
+/* ---- CONTRIBUTORS ---- */
+.profileList>div {}
+
+span.arrow {background-image: url(../images/arrows.png); background-repeat: no-repeat; height: 60px; width: 30px; display: block; position: relative; top: 50%; margin-top: -30px;}
+	span.arrow.left {}
+	span.arrow.right {background-position: -30px 0;}
+
+div.facial.profile {margin: 0 auto; height: 100px; width: 100px; -moz-border-radius: 50px; -webkit-border-radius: 50px; border-radius: 50px; border: 4px solid;}
+div.name h4 {font-weight: 600; font-size: 22px; margin: 10px auto 4px;}
+div.name h5 {font-size: 20px; margin: 0;}
+
+
+/* ---- FOOTER ---- */
+footer .social .container {display: flex;}
+footer .social a {background-position-x: -0px; height: 120px; width: 120px; margin: 30px auto; justify-content:center;}
+
+div.mailing {margin: 100px 0;}
+	.mailing input {min-width: 300px;}
+
+div.legalities {height: 75px; border-radius: 50px; position: relative; font-size: 18px;}
+	.legalities p {margin: 25px 0 0;}
+
+footer .mask {position: absolute; height: 40px; bottom: 0; width: 100%; z-index: -1;}
+
+
+/* ---- RESPONSIVE ---- */
+@media screen and (max-width: 700px) {
+	section#landing h1 {width: 480px; height: 196px;}
+}
+@media screen and (max-width: 480px) {
+	section#landing h1 {width: 300px; height: 123px;}
+}
+
+/* PRIMARY MOBILE */
+@media screen and (max-width: 600px) {
+	footer .social a {height: 60px; width: 60px;}
+	.social a {background-size: 200%;}
+
+	a#facebook {background-position-y: -60px;}
+	a#twitter {background-position-y: -120px;}
+	a#instagram {background-position-y: -180px;}
+	a#web {background-position-y: -240px;}
+
+	.iPhone {margin: 0 auto; float: none;}
+	input {text-align: center;}
+}
+
+
+
 
 
 

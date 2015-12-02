@@ -25,26 +25,40 @@
 
     <link rel="stylesheet" href="styles/stylesMASTER.css"/>
   </head>
-  <body class="text-center">
+  <body class="text-center blue">
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     
       <header class="bg-blue white">
-        <div id="logo"></div>
-        <nav>
-          <ul>
-            <li><a>About</a></li>
-            <li><a>Features</a></li>
-            <li><a>Design</a></li>
-            <li><a>Premium</a></li>
-            <li><a>Contributors</a></li>
-          </ul>
-        </nav>
-        <div id="social">
-          <span id="facebook"></span>
-          <span id="twitter"></span>
+        <div class="mask bg-blue"></div>
+        <div class="container">
+          <div class="header row">
+            <div class="col-xs-1 logo">
+              <div id="logo"></div>
+            </div>
+            <div class="col-xs-10">
+              <nav>
+                <ul>
+                  <li><a>About</a></li>
+                  <li><a>Features</a></li>
+                  <li><a>Design</a></li>
+                  <li><a>Premium</a></li>
+                  <li><a>Contributors</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-xs-1">
+              <div id="ellipses">
+                <div class="dots">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </header>
 
@@ -52,17 +66,17 @@
       <section id="landing" class="row">
         <div class="col-xs-12">
           <h1 class="text-hide">BOUT</h1>
-          <h2 class="h3">At last, our LGBTQ community has a home</h2>
-          <h5>Introducing the world's first, all-inclusive LGBTQ app.</h5>
-          <h5>A place for all of us to discuss, connect, and have fun.</h5>
+          <h2>At last, our LGBTQ community has a home</h2>
+          <h5 class="h4">Introducing the world's first, all-inclusive LGBTQ app.</h5>
+          <h5 class="h4">A place for all of us to discuss, connect, and have fun.</h5>
           <div class="vid-container row">
-            <div class="video col-xs-6">
-              <video></video>
-              <caption>Watch the Launch Video</caption>
+            <div class="video col-xs-6 col-xxs-12">
+              <video class="bg-blue mobile-collapse"></video>
+              <caption>Watch the Launch Video<span class="icon vid mobile-only"></span></caption>
             </div>
-            <div class="video col-xs-6">
-              <video></video>
-              <caption>Watch the Commercial</caption>
+            <div class="video col-xs-6 col-xxs-12">
+              <video class="bg-blue mobile-collapse"></video>
+              <caption>Watch the Commercial<span class="icon vid mobile-only"></caption>
             </div>
           </div>
         </div>
@@ -72,41 +86,41 @@
         <div class="col-xs-12">
           <h1>Mission</h1>
           <div class="thumbnail">
-            <img/>
+            <img src="images/bout_button.png" width="100" height="100"/>
           </div>
           <div class="content">
             <p>B OUT is an authentic social media platform that is collaborative, engaging LGBTQ-centric community creating a unique participatory social media experience that compels a fundamental shift in the script of gay culture</p>
             <p>Our mission is to provide the LGBTQ community with great content on an interactive platform that offers a safe, trustworthy, well-lit, authentic, and vibrant place to share ideas, debate issues, organize, build relationships, and have fun.</p>
           </div>
-          <button class="btn btn-default">Learn More</button>
+          <button class="btn btn-bout">Learn More</button>
         </div>
       </section>
 
       <section id="features" class="row feature-set">
-        <div class="col-xs-4 col-offset-1 phone-gap">
-
+        <div class="col-xs-5 col-xxs-12 phone-gap">
+          <div class="iPhone"></div>
         </div>
-        <div class="col-xs-7 blurb">
+        <div class="col-xs-7 col-xxs-12 blurb">
           <h1>Features</h1>
           <div class="content">
             <p>B OUT is an authentic social media platform that is collaborative, engaging LGBTQ-centric community creating a unique participatory social media experience that compels a fundamental shift in the script of gay culture</p>
             <p>Our mission is to provide the LGBTQ community with great content on an interactive platform that offers a safe, trustworthy, well-lit, authentic, and vibrant place to share ideas, debate issues, organize, build relationships, and have fun.</p>
           </div>
-          <button class="btn btn-default">Learn More</button>
+          <button class="btn btn-bout">Learn More</button>
         </div>
       </section>
 
       <section id="design" class="row feature-set">
-        <div class="col-xs-7 blurb">
+        <div class="col-xs-7 col-xxs-12 blurb">
           <h1>Design</h1>
           <div class="content">
             <p>B OUT is an authentic social media platform that is collaborative, engaging LGBTQ-centric community creating a unique participatory social media experience that compels a fundamental shift in the script of gay culture</p>
             <p>Our mission is to provide the LGBTQ community with great content on an interactive platform that offers a safe, trustworthy, well-lit, authentic, and vibrant place to share ideas, debate issues, organize, build relationships, and have fun.</p>
           </div>
-          <button class="btn btn-default">Learn More</button>
+          <button class="btn btn-bout">Learn More</button>
         </div>
-        <div class="col-xs-4 col-offset-1 phone-gap">
-
+        <div class="col-xs-5 col-xxs-12 phone-gap">
+          <div class="iPhone right"></div>
         </div>
       </section>
 
@@ -116,25 +130,68 @@
             <p>B OUT is an authentic social media platform that is collaborative, engaging LGBTQ-centric community creating a unique participatory social media experience that compels a fundamental shift in the script of gay culture</p>
             <p>Our mission is to provide the LGBTQ community with great content on an interactive platform that offers a safe, trustworthy, well-lit, authentic, and vibrant place to share ideas, debate issues, organize, build relationships, and have fun.</p>
         </div>
-        <button class="btn btn-default">Learn More</button>
+        <button class="btn btn-bout">Learn More</button>
       </section>
 
       <section id="team" class="row">
         <h1>Contributors</h1>
         <div class="content">
-          <div class="row">
-            <div class="col-xs-1">LEFT</div>
-            <div class="col-xs-4">FACE PIC</div>
-            <div class="col-xs-6">BIO</div>
-            <div class="col-xs-1">RIGHT</div>
+          <div class="row profileList">
+            <div class="col-xs-1"><span class="left arrow"></span></div>
+            <div class="col-xs-10">
+              <div class="col-xs-3 col-xxs-12 text-center">
+                <div class="facial profile">
+                  <img/>
+                </div>
+                <div class="name">
+                  <h4>Aaron Baideme</h4>
+                  <h5>Technical Lead</h5>
+                </div>
+              </div>
+              <div class="col-xs-7 col-xxs-12">
+                <div class="content profile">
+                  <p>Aaron Baideme has previously established himself in New York City, NY, USA prior to moving to Shanghai in June of 2015.</p>
+                  <p>Upon his arrival to Shanghai, he has continued to develop global enterprises in an attempt to increase his grand sphere of influence.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-1"><span class="right arrow"></span></div>
           </div>
           <div class="row">
             <div class="col-xs-12">
-              <button class="btn btn-default">Learn More</button>
+              <button class="btn btn-bout">Learn More</button>
             </div>
           </div>
         </div>
       </section>
+
+      </div>
+
+      <footer>
+        <div class="social bg-blue">
+          <div class="container">
+            <a id="linkedin"></a>
+            <a id="facebook"></a>
+            <a id="twitter"></a>
+            <a id="instagram"></a>
+          </div>
+        </div>
+        <div class="mailing bg-white">
+          <div class="container">
+            <label class="signup">Sign up for the B • OUT Newsletter to receive news and updates from us.</label>
+            <form id="mailing_list" name="mailing_list">
+              <input id="email" name="email" placeholder="E-Mail Address"/>
+              <button class="btn btn-bout">Learn More</button>
+            </form>
+          </div>
+        </div>
+        <div class="legalities bg-blue white">
+          <div class="mask bg-blue"></div>
+          <div class="container">
+            <p>Copyright @ 2015 B • OUT Inc. All Rights Reserved.</p>
+          </div>
+        </div>
+      </footer>
 
 
       
