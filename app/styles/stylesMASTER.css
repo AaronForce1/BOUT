@@ -17,7 +17,8 @@ header {height: 100px; -moz-border-radius: 50px; -webkit-border-radius: 50px; bo
 	.header.row {margin-top: 25px; height: 75px;}
 
 	.header.row>div {height: 100%;}
-	
+
+	section h1.logo {background: url(../images/bout_full.png) no-repeat; width: 700px; height: 285px; margin: 0 auto; background-size: contain;}
 	#logo {background: url(../images/bout_logo.png) no-repeat; width: 20px; height: 33px; background-size: contain; position: relative; top: 50%; margin-top: -16.5px;}
 
 	nav {position: relative; font-size: 16px; top: 50%; margin-top: -11.25px;}
@@ -66,7 +67,6 @@ input {height: 34px; -moz-border-radius: 17px; -webkit-border-radius: 17px; bord
 
 
 /* ---- LANDING ---- */
-	section#landing h1 {background: url(../images/bout_full.png) no-repeat; width: 700px; height: 285px; margin: 0 auto; background-size: contain;}
 	section#landing h2 {margin: 20px 0 40px;}
 
 	.vid-container {margin: 40px auto 0;}
