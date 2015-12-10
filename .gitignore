@@ -1,4 +1,7 @@
+.DS_Store
+pnm-debug.log
 node_modules
 dist
 .tmp
 bower_components
+dist

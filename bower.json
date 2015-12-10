@@ -1,22 +1,23 @@
 {
-  "name": "bout",
-  "private": true,
+  "name": "foundation-ssg",
+  "version": "1.0.0",
+  "authors": [
+    "ZURB <foundation@zurb.com>"
+  ],
+  "description": "Static site generator for Foundation for Sites.",
+  "main": "gulpfile.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
   "dependencies": {
-    "bootstrap": "~3.3.5",
-    "modernizr": "~2.8.3"
+    "foundation-sites": "~6.0.0",
+    "motion-ui": "~1.1.0",
+    "Vimg": "https://github.com/DJMcK/Vimg.git#1.0.3"
   },
-  "overrides": {
-    "bootstrap": {
-      "main": [
-        "less/bootstrap.less",
-        "dist/css/bootstrap.css",
-        "dist/js/bootstrap.js",
-        "dist/fonts/*"
-      ]
-    }
-  },
-  "devDependencies": {
-    "chai": "~3.4.2",
-    "mocha": "~2.3.4"
-  }
+  "private": true
 }

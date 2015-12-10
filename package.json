@@ -1,58 +1,41 @@
 {
-  "private": true,
-  "devDependencies": {
-    "autoprefixer": "^6.0.2",
-    "grunt": "^0.4.5",
-    "grunt-babel": "^5.0.0",
-    "grunt-browser-sync": "^2.1.2",
-    "grunt-concurrent": "^1.0.0",
-    "grunt-contrib-clean": "^0.6.0",
-    "grunt-contrib-concat": "^0.5.1",
-    "grunt-contrib-copy": "^0.8.0",
-    "grunt-contrib-cssmin": "^0.12.2",
-    "grunt-contrib-htmlmin": "^0.4.0",
-    "grunt-contrib-imagemin": "^0.9.3",
-    "grunt-contrib-uglify": "^0.8.0",
-    "grunt-contrib-watch": "^0.6.1",
-    "grunt-eslint": "^17.0.0",
-    "grunt-filerev": "^2.2.0",
-    "grunt-mocha": "^0.4.12",
-    "grunt-modernizr": "^0.6.0",
-    "grunt-newer": "^1.1.0",
-    "grunt-postcss": "^0.6.0",
-    "grunt-svgmin": "^2.0.1",
-    "grunt-usemin": "^3.0.0",
-    "grunt-wiredep": "^2.0.0",
-    "gulp": "^3.9.0",
-    "jit-grunt": "^0.9.1",
-    "time-grunt": "^1.1.0"
-  },
-  "engines": {
-    "node": ">=0.10.0"
-  },
+  "name": "BOUT",
+  "version": "0.0.1",
+  "description": "BOUT",
+  "main": "gulpfile.js",
   "scripts": {
-    "test": "grunt test"
+    "start": "gulp",
+    "build": "gulp build --production"
   },
-  "eslintConfig": {
-    "extends": [
-      "eslint:recommended"
-    ],
-    "env": {
-      "node": true,
-      "browser": true,
-      "es6": true,
-      "jquery": true,
-      "mocha": true
-    },
-    "rules": {
-      "quotes": [
-        2,
-        "single"
-      ],
-      "indent": [
-        2,
-        2
-      ]
-    }
-  }
+  "author": "AARON BAIDEME <aaron@baide.me>",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.10.0",
+    "chai": "3.4.1",
+    "decode-html": "1.0.2",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.2.0",
+    "gulp-concat": "^2.5.2",
+    "gulp-copy": "0.0.2",
+    "gulp-extname": "^0.2.0",
+    "gulp-if": "^1.2.5",
+    "gulp-imagemin": "^2.2.1",
+    "gulp-lab": "1.0.5",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-minify": "0.0.5",
+    "gulp-minify-css": "1.2.2",
+    "gulp-rename": "1.2.2",
+    "gulp-sass": "^2.1.0",
+    "gulp-sass-glob": "0.0.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "1.5.1",
+    "gulp-uncss": "^1.0.1",
+    "lab": "7.3.0",
+    "panini": "^1.0.0",
+    "rimraf": "^2.4.3",
+    "run-sequence": "^1.1.0",
+    "style-sherpa": "^1.0.0",
+    "yargs": "^3.8.0"
+  },
+  "private": true
 }
