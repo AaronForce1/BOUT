@@ -1,0 +1,22 @@
+/*  B-OUT SUPPLEMENTAL STYLESHEET */
+
+/* NAVIGATION EASING */
+.nav1 > p > span {
+	-webkit-transition-delay: 0s;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+    vertical-align: top;
+    -webkit-transition-duration: 0.4s;
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+}
+
+/* PADDING ON HOMEPAGE NEWSLETTER SIGNUP */
+#widgetu1487_input, #widgetu1487_prompt, #widgetu10789_input, #widgetu10789_prompt {
+	padding: 11px 11px 11px 16px !important;
+}
+
+/* PADDING ON CONTACT NEWSLETTER SIGNUP */
+#widgetu4572_input, #widgetu4572_prompt, #widgetu4564_input, #widgetu4564_prompt, #widgetu4568_input, #widgetu4568_prompt, #widgetu4661_input, #widgetu4661_prompt {
+	padding: 17px !important;
+}
