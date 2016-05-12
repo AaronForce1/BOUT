@@ -1,0 +1,20 @@
+section#landing h2 {margin: 20px 0 40px;}
+
+.vid-container {margin: 40px auto 0;}
+.vid-container video {width: 100%;}
+
+
+/* ---- MISSION ---- */
+#mission .thumbnail {margin: 20px 0; border: none;}
+
+
+/* ---- CONTRIBUTORS ---- */
+.profileList>div {}
+
+span.arrow {background-image: url(../img/arrows.png); background-repeat: no-repeat; height: 60px; width: 30px; display: block; position: relative; top: 50%; margin-top: -30px;}
+span.arrow.left {}
+span.arrow.right {background-position: -30px 0;}
+
+div.facial.profile {margin: 0 auto; height: 100px; width: 100px; -moz-border-radius: 50px; -webkit-border-radius: 50px; border-radius: 50px; border: 4px solid;}
+div.name h4 {font-weight: 600; font-size: 22px; margin: 10px auto 4px;}
+div.name h5 {font-size: 20px; margin: 0;}

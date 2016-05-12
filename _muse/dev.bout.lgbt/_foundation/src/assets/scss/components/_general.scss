@@ -1,0 +1,19 @@
+/* ---- GENERAL STYLINGS ---- */
+body {font-family: 'RooneySansLF-Regular';}
+section {margin: 5em 0;}
+
+section h1 {font-size: 80px; color: white; -moz-text-shadow: 3px 5px 8px rgb(102,102,102); -webkit-text-shadow: 3px 5px 8px rgb(102,102,102); text-shadow: 3px 5px 8px rgb(102,102,102); font-weight: bold; margin: 30px 0 60px;}
+section p {font-size: 16px;}
+
+.btn-bout {font-size: 14px; margin: 20px 0; color: white; background-color: #1b75bc; height: 34px; -moz-border-radius: 17px; -webkit-border-radius: 17px; border-radius: 17px; padding: 0 30px; -moz-box-shadow: 0px 1px 3px rgb(102, 102, 102); -webkit-box-shadow: 0px 1px 3px rgb(102, 102, 102); box-shadow: 0px 1px 3px rgb(102, 102, 102);}
+.iPhone {min-height: 564px; width: 275px; background: url(../img/iphone_wireframe.png) no-repeat; background-size: contain;}
+
+input {height: 34px; -moz-border-radius: 17px; -webkit-border-radius: 17px; border-radius: 17px; border: 2px solid; padding: 10px; font-size: 12px;}
+
+/* ---- SOCIAL ---- */
+.social a {background-image: url(../img/social_icons.png); background-repeat: no-repeat;}
+	a#linkedin {background-positon-y: 0;}
+	a#facebook {background-position-y: -120px;}
+	a#twitter {background-position-y: -240px;}
+	a#instagram {background-position-y: -360px;}
+	a#web {background-position-y: -480px;}

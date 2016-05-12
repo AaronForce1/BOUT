@@ -1,0 +1,177 @@
+// Mixins
+@mixin font-over-primary ($size: $rem-base) {
+  color: $secondary-color;
+  font: {
+    size: rem-calc($size);
+    weight: 400;
+  }
+}
+
+// Classes
+$module: '.type';
+#{$module} {
+  &-header {
+    &-xlarge {
+      color: $primary-color;
+      @include font-size(map-get(map-get($header-sizes, medium), h1));
+      font: {
+        weight: 700;
+      }
+    }
+    &-large {
+      color: $primary-color;
+      @include font-size(map-get(map-get($header-sizes, medium), h2));
+      font: {
+        weight: 700;
+      }
+      .btn-align {
+        margin: 0.5rem 0;
+      }
+    }
+    &-medium {
+      color: $body-color;
+      @include font-size(map-get(map-get($header-sizes, medium), h3));
+      font: {
+        weight: 600;
+      }
+    }
+    &-small {
+      color: $body-color;
+      @include font-size(map-get(map-get($header-sizes, medium), h4));
+      font: {
+        weight: 600;
+      }
+    }
+    &-xsmall {
+      color: $body-color;
+      @include font-size(map-get(map-get($header-sizes, medium), h5));
+      font: {
+        weight: 600;
+      }
+    }
+  }
+  &-subtitle {
+    &-xlarge {
+      color: $body-color;
+      @include font-size(map-get(map-get($header-sizes, subtitle), h1));
+      font: {
+        weight: 400;
+      }
+    }
+    &-large {
+      color: $body-color;
+      @include font-size(map-get(map-get($header-sizes, subtitle), h2));
+      font: {
+        weight: 400;
+      }
+    }
+    &-medium {
+      color: $body-color;
+      @include font-size(map-get(map-get($header-sizes, subtitle), h3));
+      font: {
+        weight: 400;
+      }
+    }
+    &-small {
+      color: $body-color;
+      @include font-size(map-get(map-get($header-sizes, subtitle), h4));
+      font: {
+        weight: 600;
+      }
+      &__no-space {
+        @extend .type-subtitle-small;
+        margin: 0;
+      }
+    }
+    &-xsmall {
+      color: $body-color;
+      @include font-size(map-get(map-get($header-sizes, subtitle), h5));
+      font: {
+        weight: 600;
+      }
+    }
+  }
+  &-generic {
+    font-family: $body-alternate-font;
+    @include font-size(map-get(map-get($header-sizes, medium), h6));
+  }
+  &-body-copy {
+    color: $body-color;
+    @include font-size(14);
+    &-gray {color: $tertiary-medium-gray;}
+    &-semibold {font-weight: 600;}
+  }
+  &-tag {
+    color: $tertiary-medium-gray;
+
+    border: 1px solid $tertiary-light-gray;
+    padding: 0 15px;
+    min-height: 35px;
+    border-radius: $keystroke-radius;
+    display: inline-block;
+    line-height: 2.1;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+
+    &:hover {
+      background-color: $secondary-color;
+      color: $white;
+    }
+  }
+  &-legal {
+    color: $body-color;
+    @include font-size(10);
+  }
+}
+a {
+  color: $secondary-color;
+  font: {
+    family: $body-alternate-font;
+    weight: 700;
+  }
+  &.arrow-link {
+    font: {
+      size: 1.1em;
+    }
+  }
+}
+blockquote {
+  position: relative;
+  line-height: 1.8;
+  font-family: $body-font-family;
+  color: $body-color;
+  @include font-size(20);
+
+  &:before,
+  &:after {
+    color: $secondary-color;
+    @include font-size(30);
+    position: absolute;
+  }
+  &:before {
+    content: "\201C";
+    left: -1rem;
+    top: 4px;
+  }
+  &:after {
+    content: "\201D";
+    margin-top: -10px;
+  }
+}
+
+ul {
+  margin: 0 0 1rem;
+}
+
+.primary-color {color: $primary-color;}
+.secondary-color {color: $secondary-color;}
+.body-color {color: $body-color;}
+.white {color: $white;}
+
+.bg-primary {background-color: $primary-color;}
+.bg-secondary {background-color: $secondary-color;}
+
+.border-primary {border: 1px solid $primary-color;}
+.border-secondary {border: 1px solid $secondary-color;}
