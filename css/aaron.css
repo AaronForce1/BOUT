@@ -69,36 +69,48 @@ body#home input, body#home textarea {
 /* MEMBERSHIP HOVERS */
 
 /* FIRST ITEM */
-#u4463:hover	#u4291 {
-		background-image: url("../images/u4463-r.png");
-		left: -50px;
+#u4463:hover {cursor: pointer}
+#u4463:hover	#u4298  {
+		background-image: url("../images/u4298-r3.png");
+		left: -38px;
 }
-
 #u4463:hover #u4343 {
 		color: #25AAE1;
 }
+.hidpi #u4463:hover	#u4298  {
+	background-image: url("../images/u4298-r_2x3.png");
+	left: -38px;
+}
 
 /* SECOND ITEM */
+#u4469:hover {cursor: pointer;}
 #u4469:hover	#u4291 {
 		background-image: url("../images/u4291-r.png");
 		left: -50px;
 }
-
 #u4469:hover #u4355 {
 		color: #25AAE1;
 }
+.hidpi #u4469:hover #u4291{
+	background-image: url("../images/u4291-r_2x5.png");
+}
 
 /* THIRD ITEM */
+#u4475:hover {cursor: pointer;}
 #u4475:hover #u4283 {
 		background-image: url("../images/u4283-r.png");
 		margin-left: 50%;
-		left: -49px;
+		left: -50px;
 }
 #u4475:hover #u4367 {
 		color: #25AAE1;
 }
+.hidpi #u4475:hover #u4283{
+	background-image: url("../images/u4283-r_2x5.png");
+}
 
 /* FOURTH ITEM */
+#u4481:hover {cursor: pointer;}
 #u4481:hover #u4394 {
 		background-image: url("../images/u4394-r.png");
 		margin-left: 50%;
@@ -107,8 +119,12 @@ body#home input, body#home textarea {
 #u4481:hover #u4427 {
 		color: #25AAE1;
 }
+.hidpi #u4481:hover #u4394{
+	background-image:("../images/u4394_2x3.png");
+}
 
 /* FIFTH ITEM */
+#u4487:hover {cursor: pointer;}
 #u4487:hover #u4379 {
 		background-image: url("../images/u4379-r.png");
 		margin-left: 50%;
@@ -117,13 +133,24 @@ body#home input, body#home textarea {
 #u4487:hover #u4439 {
 		color: #25AAE1;
 }
+.hidpi #u4487:hover #u4379{
+	background-image: url("../images/u4379-r_2x3.png");
+}
 
 /* SIXTH ITEM */
+#u4493:hover {cursor: pointer;}
 #u4493:hover #u4387 {
 		background-image: url("../images/u4387-r.png");
 		margin-left: 50%;
-    left: -42px;
+    left: -41px;
 }
 #u4493:hover #u4451, #u4493:hover #u4451-3 {
 		color: #25AAE1;
 }
+.hidpi #u4493:hover #u4387{
+	background-image: url("../images/u4387-r_2x3.png");
+}
+
+
+/* REMOVE KICKSTARTER AND SHARE */
+#u10247, #u10158 {display: none;}

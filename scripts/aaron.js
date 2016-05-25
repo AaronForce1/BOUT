@@ -2,13 +2,18 @@
 
 $(document).ready(function() {
   initScrollerVid();
-  $('.fancybox-media').fancybox({
-		openEffect  : 'none',
-		closeEffect : 'none',
-		helpers : {
-			media : {}
-		}
-	});
+
+  if ($('.fancybox-media').length > 0) {
+    $('.fancybox-media').fancybox({
+  		openEffect  : 'none',
+  		closeEffect : 'none',
+  		helpers : {
+  			media : {}
+  		}
+    });
+  }
+
+
   setTimeout(function(){
     $('#u5486').unbind();
   }, 1000);
@@ -16,14 +21,25 @@ $(document).ready(function() {
 });
 
 function initScrollerVid() {
-  queryVideos();
+  var WinW = window.innerWidth;
+
+  if (WinW < 500 && $('body').attr('data-whatinput') == "touch") {/*console.log('Autoplay Disabled');*/}
+  else {
+    queryVideos();
+  }
 
   $(window).resize(function(){
-    queryVideos();
+    if (WinW < 500 && $('body').attr('data-whatinput') == "touch") {/*console.log('Autoplay Disabled');*/}
+    else {
+      queryVideos();
+    }
   });
 
   $(window).scroll(function(){
-    queryVideos();
+    if (WinW < 500 && $('body').attr('data-whatinput') == "touch") {/*console.log('Autoplay Disabled');*/}
+    else {
+      queryVideos();
+    }
   })
 }
 
@@ -31,10 +47,8 @@ function queryVideos() {
   console.log('QUERY');
 
   var WinH = window.innerHeight;
-  var WinW = window.innerWidth
 
   if (WinH < 414) {}
-  else if (WinW < 500 && $('body').attr('data-whatinput') == "touch") {console.log('Autoplay Disabled');}
   else {
     var ScrollTop = $(window).scrollTop()
 
@@ -51,10 +65,10 @@ function queryVideos() {
       }
       else {
         $(video).get(0).pause();
-        console.log(i+' video has stopped')
+        //console.log(i+' video has stopped')
       }
-      console.log(WinH);
-      console.log($(video).offset().top)
+      //console.log(WinH);
+      //console.log($(video).offset().top)
     }
   }
 }
