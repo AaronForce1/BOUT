@@ -31,8 +31,10 @@ function queryVideos() {
   console.log('QUERY');
 
   var WinH = window.innerHeight;
+  var WinW = window.innerWidth
 
   if (WinH < 414) {}
+  else if (WinW < 500 && $('body').attr('data-whatinput') == "touch") {console.log('Autoplay Disabled');}
   else {
     var ScrollTop = $(window).scrollTop()
 
