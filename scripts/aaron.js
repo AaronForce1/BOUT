@@ -2,6 +2,17 @@
 
 $(document).ready(function() {
   initScrollerVid();
+  $('.fancybox-media').fancybox({
+		openEffect  : 'none',
+		closeEffect : 'none',
+		helpers : {
+			media : {}
+		}
+	});
+  setTimeout(function(){
+    $('#u5486').unbind();
+  }, 1000);
+
 });
 
 function initScrollerVid() {

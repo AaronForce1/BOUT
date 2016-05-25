@@ -11,6 +11,11 @@
     transition-duration: 0.4s;
 }
 
+/* LIGHTBOX */
+.fancybox-overlay {
+	background: rgba(27,117,188,0.9) !important;
+}
+
 /* PADDING ON HOMEPAGE NEWSLETTER SIGNUP */
 #widgetu1487_input, #widgetu1487_prompt, #widgetu10789_input, #widgetu10789_prompt {
 	padding: 11px 11px 11px 16px !important;
@@ -22,8 +27,12 @@
 }
 
 /* PADDING ON CONTACT NEWSLETTER SIGNUP */
-body#contact input, body#contact  textarea {
+body#contact input, body#contact  textarea, body#home input, body#home textarea {
 	padding: 17px !important;
+}
+
+body#home input, body#home textarea {
+	font-size: 14px;
 }
 
 @media screen and (max-width: 415px) {
