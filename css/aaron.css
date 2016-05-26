@@ -154,3 +154,10 @@ body#home input, body#home textarea {
 
 /* REMOVE KICKSTARTER AND SHARE */
 #u10247, #u10158 {display: none;}
+
+@media screen and (max-width: 540px) {
+	body#home>div {max-width: 100% !important;}
+	.LightboxContent {width: 100% !important;}
+	.ContainerGroup {width: 100% !important;}
+	.Container {max-width: 100% !important;}
+}

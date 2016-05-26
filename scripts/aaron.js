@@ -3,7 +3,7 @@
 $(document).ready(function() {
   initScrollerVid();
 
-  if ($('.fancybox-media').length > 0) {
+  /*if ($('.fancybox-media').length > 0) {
     $('.fancybox-media').fancybox({
   		openEffect  : 'none',
   		closeEffect : 'none',
@@ -16,7 +16,7 @@ $(document).ready(function() {
 
   setTimeout(function(){
     $('#u5486').unbind();
-  }, 1000);
+  }, 1000);*/
 
 });
 
