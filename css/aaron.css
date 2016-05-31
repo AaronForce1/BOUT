@@ -32,7 +32,7 @@ body#contact input, body#contact  textarea, body#home input, body#home textarea 
 }
 
 body#home input, body#home textarea {
-	font-size: 14px;
+	font-size: 14px !important;
 }
 
 @media screen and (max-width: 415px) {
