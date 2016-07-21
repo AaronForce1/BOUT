@@ -35,6 +35,10 @@ body#home input, body#home textarea {
 	font-size: 14px;
 }
 
+.Button {
+	cursor: pointer;
+}
+
 @media screen and (max-width: 414px) {
 	body#home input, body#home textarea {
 		font-size: 14px !important;
@@ -42,7 +46,7 @@ body#home input, body#home textarea {
 }
 
 @media screen and (max-width: 415px) {
-	body#contact input, body#contact  textarea, body#contact input:hover, body#contact textarea:hover, .fld-grp.clearfix.grpelem.focus-st {
+	body#contact input, body#contact  textarea, body#contact input:hover, body#contact textarea:hover, .fld-grp.clearfix.grpelem.focus-st, .Button {
 		font-size: 14px !important;
 		font-weight: bold;
 	}
@@ -50,6 +54,14 @@ body#home input, body#home textarea {
 	{
 		font-size: 14px !important;
 		font-weight: bold;
+	}
+	#buttonu12513:hover #u12514-4 p, #buttonu12513:hover #u12514-4 span, #buttonu12513:active #u12514-4 p, #buttonu12513:active #u12514-4 span, #buttonu12547:hover #u12548-4 p, #buttonu12547:hover #u12548-4 span, #buttonu12547:active #u12548-4 p, #buttonu12547:active #u12548-4 span {
+		font-size: 16px !important;
+		font-weight: bold;
+	}
+	
+	#widgetu4572.non-empty-st #u4573-4 *, #widgetu4572:hover #u4573-4 *, #widgetu4572.focus-st #u4573-4 *, #widgetu4572.fld-err-st #u4573-4 *, #widgetu4564.non-empty-st #u4566-4 *, #widgetu4564:hover #u4566-4 *, #widgetu4564.focus-st #u4566-4 *, #widgetu4564.fld-err-st #u4566-4 *, #widgetu4568.non-empty-st #u4569-4 *, #widgetu4568:hover #u4569-4 *, #widgetu4568.focus-st #u4569-4 *, #widgetu4568.fld-err-st #u4569-4 *, #widgetu4661.non-empty-st #u4664-4 *, #widgetu4661:hover #u4664-4 *, #widgetu4661.focus-st #u4664-4 *, #widgetu4661.fld-err-st #u4664-4 * {
+		font-size: 14px;
 	}
 
 }
