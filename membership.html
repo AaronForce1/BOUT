@@ -15,10 +15,13 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
 </script>
   
   <title>B • OUT - Membership</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="B • OUT is a collaborative, participatory LGBTQ-centric community, based on killer content and vibrant, engaged community. Combined with cutting edge user experience and intuitive features, the B • OUT app is designed to compel a fundamental shift in the script of LGBTQ culture." />
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=353554032"/>
   <link rel="stylesheet" type="text/css" href="css/master_a-master.css?crc=4228332909"/>
   <link rel="stylesheet" type="text/css" href="css/b-_-out---membership.css?crc=97719142" id="pagesheet"/>
+  <link rel="stylesheet" type="text/css" href="css/aaron.css"/>
   <!-- IE-only CSS -->
   <!--[if lt IE 9]>
   <link rel="stylesheet" type="text/css" href="css/nomq_preview_master_a-master.css?crc=3889515261"/>
@@ -26,8 +29,47 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
   <![endif]-->
     <!--/*
 
-*/
--->
+<!-- FAVICON INFO -->
+<link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+<link rel="manifest" href="images/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!-- FACEBOOK META -->
+<meta property="og:title" content="B • OUT - Membership" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="http://bout.lgbt/images/favicon/BOUTFeature.jpeg" />
+<meta property="og:image:url" content="http://bout.lgbt/images/favicon/BOUTFeature.jpeg" />
+<meta property="og:description" content="B • OUT is a collaborative, participatory LGBTQ-centric community, based on killer content and vibrant, engaged community. Combined with cutting edge user experience and intuitive features, the B • OUT app is designed to compel a fundamental shift in the script of LGBTQ culture." />
+<meta property="og:url" content="http://bout.lgbt/membership.html" />
+<meta property="og:site_name" content="B • OUT" />
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1719334195004851');
+fbq('track', "PageView");</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1719334195004851&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
  </head>
  <body>
 
@@ -996,7 +1038,7 @@ controls loop>
     <div class="browser_width shared_content" id="u7124-bw" data-content-guid="u7124-bw_content">
      <div id="u7124"><!-- simple frame --></div>
     </div>
-    <a class="nonblock nontext nav1 transition clearfix shared_content" id="u7194-4" href="index.html" data-content-guid="u7194-4_content"><!-- content --><p class="phone_nav" id="u7194-2"><span id="u7194">Home</span></p></a>
+    <a class="nonblock nontext nav1 transition clearfix shared_content" id="u7194-4" href="index.html" data-content-guid="u7194-4_content"><!-- content --><p class="phone_nav mobile-nav-icon" id="u7194-2"><img src="images/boutLogo.png"/><span id="u7194">Home</span></p></a>
     <span class="nonblock nontext transition placeholder" data-placeholder-for="u109_content"><!-- placeholder node --></span>
     <a class="nonblock nontext nav1 transition clearfix shared_content" id="u10183-4" href="about.html" data-content-guid="u10183-4_content"><!-- content --><p class="phone_nav mobile-nav-icon" id="u10183-2"><img src="images/iconInfoWhite.png"/><span id="u10183">About</span></p></a>
     <a class="nonblock nontext shared_content" id="u7140" href="about.html" data-content-guid="u7140_content"><!-- state-based BG images --></a>
@@ -1157,6 +1199,17 @@ Muse.Utils.fullPage('#page');/* 100% height page */
 $( '.breakpoint' ).registerBreakpoint();/* Register breakpoints */
 Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
 }catch(a){if(a&&"function"==typeof a.notify?a.notify():Muse.Assert.fail("Error calling selector function: "+a),false)throw a;}})})};
+
+</script>
+<script type="text/javascript" src="scripts/aaron.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78627022-1', 'auto');
+  ga('send', 'pageview');
 
 </script>
   <!-- RequireJS script -->

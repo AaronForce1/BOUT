@@ -63,6 +63,9 @@ body#home input, body#home textarea {
 	#widgetu4572.non-empty-st #u4573-4 *, #widgetu4572:hover #u4573-4 *, #widgetu4572.focus-st #u4573-4 *, #widgetu4572.fld-err-st #u4573-4 *, #widgetu4564.non-empty-st #u4566-4 *, #widgetu4564:hover #u4566-4 *, #widgetu4564.focus-st #u4566-4 *, #widgetu4564.fld-err-st #u4566-4 *, #widgetu4568.non-empty-st #u4569-4 *, #widgetu4568:hover #u4569-4 *, #widgetu4568.focus-st #u4569-4 *, #widgetu4568.fld-err-st #u4569-4 *, #widgetu4661.non-empty-st #u4664-4 *, #widgetu4661:hover #u4664-4 *, #widgetu4661.focus-st #u4664-4 *, #widgetu4661.fld-err-st #u4664-4 * {
 		font-size: 14px;
 	}
+	#widgetu1487_input, #widgetu1487_prompt, #widgetu10789_input, #widgetu10789_prompt {
+		font-size: 14px;
+	}
 
 }
 
