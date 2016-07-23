@@ -94,6 +94,7 @@ body#home input, body#home textarea {
 #u4463:hover	#u4298  {
 		background-image: url("../images/u4298-r3.png");
 		left: -38px;
+		background-size: 100%;
 }
 #u4463:hover #u4343 {
 		color: #25AAE1;
@@ -101,6 +102,7 @@ body#home input, body#home textarea {
 .hidpi #u4463:hover	#u4298  {
 	background-image: url("../images/u4298-r_2x3.png");
 	left: -38px;
+	background-size: 100%;
 }
 
 /* SECOND ITEM */
