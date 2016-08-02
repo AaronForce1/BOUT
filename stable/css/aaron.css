@@ -2,13 +2,15 @@
 
 /* NAVIGATION EASING */
 .nav1 > p > span {
-	-webkit-transition-delay: 0s;
+		-webkit-transition-delay: 0s;
     -webkit-transition-timing-function: ease;
     transition-timing-function: ease;
     vertical-align: top;
     -webkit-transition-duration: 0.4s;
     transition-delay: 0s;
     transition-duration: 0.4s;
+		-moz-transition-delay: 0s;
+		-moz-transition-duration: 0.4s;
 }
 
 /* LIGHTBOX */
@@ -17,17 +19,17 @@
 }
 
 /* PADDING ON HOMEPAGE NEWSLETTER SIGNUP */
-#widgetu1487_input, #widgetu1487_prompt, #widgetu10789_input, #widgetu10789_prompt {
+#widgetu1487_input, #widgetu1487_prompt, #widgetu10789_input, #widgetu10789_prompt, body#home input {
 	padding: 11px 11px 11px 16px !important;
 }
 
 /* PADDING ON CONTACT NEWSLETTER SIGNUP */
-#widgetu4572_input, #widgetu4572_prompt, #widgetu4564_input, #widgetu4564_prompt, #widgetu4568_input, #widgetu4568_prompt, #widgetu4661_input, #widgetu4661_prompt {
+#widgetu4572_input, #widgetu4572_prompt, #widgetu4564_input, #widgetu4564_prompt, #widgetu4568_input, #widgetu4568_prompt, #widgetu4661_input, #widgetu4661_prompt, #widgetu11866.non-empty-st #u11868-4 *, #widgetu11866.fld-err-st #u11868-4 *, #widgetu11875.non-empty-st #u11877-4 *, #widgetu11875.fld-err-st #u11877-4 *, #widgetu12419.non-empty-st #u12421-4 *, #widgetu12419.fld-err-st #u12421-4 * {
 	padding: 17px !important;
 }
 
 /* PADDING ON CONTACT NEWSLETTER SIGNUP */
-body#contact input, body#contact  textarea, body#home input, body#home textarea {
+body#contact input, body#contact  textarea, body#home textarea {
 	padding: 17px !important;
 }
 
@@ -50,7 +52,7 @@ body#home input, body#home textarea {
 		font-size: 14px !important;
 		font-weight: bold;
 	}
-	#widgetu4572:hover #widgetu4572_input,#widgetu4572.focus-st #widgetu4572_input,#widgetu4572.fld-err-st #widgetu4572_input,#widgetu4572:hover #widgetu4572_prompt,#widgetu4572.focus-st #widgetu4572_prompt,#widgetu4572.fld-err-st #widgetu4572_prompt,#widgetu4564:hover #widgetu4564_input,#widgetu4564.focus-st #widgetu4564_input,#widgetu4564.fld-err-st #widgetu4564_input,#widgetu4564:hover #widgetu4564_prompt,#widgetu4564.focus-st #widgetu4564_prompt,#widgetu4564.fld-err-st #widgetu4564_prompt,#widgetu4568:hover #widgetu4568_input,#widgetu4568.focus-st #widgetu4568_input,#widgetu4568.fld-err-st #widgetu4568_input,#widgetu4568:hover #widgetu4568_prompt,#widgetu4568.focus-st #widgetu4568_prompt,#widgetu4568.fld-err-st #widgetu4568_prompt,#widgetu4661:hover #widgetu4661_input,#widgetu4661.focus-st #widgetu4661_input,#widgetu4661.fld-err-st #widgetu4661_input,#widgetu4661:hover #widgetu4661_prompt,#widgetu4661.focus-st #widgetu4661_prompt,#widgetu4661.fld-err-st #widgetu4661_prompt
+	#widgetu4572:hover #widgetu4572_input,#widgetu4572.focus-st #widgetu4572_input,#widgetu4572.fld-err-st #widgetu4572_input,#widgetu4572:hover #widgetu4572_prompt,#widgetu4572.focus-st #widgetu4572_prompt,#widgetu4572.fld-err-st #widgetu4572_prompt,#widgetu4564:hover #widgetu4564_input,#widgetu4564.focus-st #widgetu4564_input,#widgetu4564.fld-err-st #widgetu4564_input,#widgetu4564:hover #widgetu4564_prompt,#widgetu4564.focus-st #widgetu4564_prompt,#widgetu4564.fld-err-st #widgetu4564_prompt,#widgetu4568:hover, #widgetu4568_input,#widgetu4568.focus-st #widgetu4568_input,#widgetu4568.fld-err-st #widgetu4568_input,#widgetu4568:hover #widgetu4568_prompt,#widgetu4568.focus-st #widgetu4568_prompt,#widgetu4568.fld-err-st #widgetu4568_prompt,#widgetu4661:hover #widgetu4661_input,#widgetu4661.focus-st #widgetu4661_input,#widgetu4661.fld-err-st #widgetu4661_input,#widgetu4661:hover #widgetu4661_prompt,#widgetu4661.focus-st #widgetu4661_prompt,#widgetu4661.fld-err-st #widgetu4661_prompt
 	{
 		font-size: 14px !important;
 		font-weight: bold;
@@ -59,11 +61,11 @@ body#home input, body#home textarea {
 		font-size: 16px !important;
 		font-weight: bold;
 	}
-	
+
 	#widgetu4572.non-empty-st #u4573-4 *, #widgetu4572:hover #u4573-4 *, #widgetu4572.focus-st #u4573-4 *, #widgetu4572.fld-err-st #u4573-4 *, #widgetu4564.non-empty-st #u4566-4 *, #widgetu4564:hover #u4566-4 *, #widgetu4564.focus-st #u4566-4 *, #widgetu4564.fld-err-st #u4566-4 *, #widgetu4568.non-empty-st #u4569-4 *, #widgetu4568:hover #u4569-4 *, #widgetu4568.focus-st #u4569-4 *, #widgetu4568.fld-err-st #u4569-4 *, #widgetu4661.non-empty-st #u4664-4 *, #widgetu4661:hover #u4664-4 *, #widgetu4661.focus-st #u4664-4 *, #widgetu4661.fld-err-st #u4664-4 * {
 		font-size: 14px;
 	}
-	#widgetu1487_input, #widgetu1487_prompt, #widgetu10789_input, #widgetu10789_prompt {
+	#widgetu1487_input, #widgetu1487_prompt, #widgetu10789_input, #widgetu10789_prompt, #widgetu11866.non-empty-st #u11868-4 *, #widgetu11866.fld-err-st #u11868-4 *, #widgetu11875.non-empty-st #u11877-4 *, #widgetu11875.fld-err-st #u11877-4 *, #widgetu12419.non-empty-st #u12421-4 *, #widgetu12419.fld-err-st #u12421-4 * {
 		font-size: 14px;
 	}
 
@@ -93,7 +95,6 @@ body#home input, body#home textarea {
 #u4463:hover {cursor: pointer}
 #u4463:hover	#u4298  {
 		background-image: url("../images/u4298-r3.png");
-		left: -38px;
 		background-size: 100%;
 }
 #u4463:hover #u4343 {
@@ -109,69 +110,70 @@ body#home input, body#home textarea {
 #u4469:hover {cursor: pointer;}
 #u4469:hover	#u4291 {
 		background-image: url("../images/u4291-r.png");
-		left: -50px;
+		background-size: 100%;
 }
 #u4469:hover #u4355 {
 		color: #25AAE1;
 }
 .hidpi #u4469:hover #u4291{
 	background-image: url("../images/u4291-r_2x5.png");
+	background-size: 100%;
 }
 
 /* THIRD ITEM */
 #u4475:hover {cursor: pointer;}
 #u4475:hover #u4283 {
 		background-image: url("../images/u4283-r.png");
-		margin-left: 50%;
-		left: -50px;
+		background-size: 100%;
 }
 #u4475:hover #u4367 {
 		color: #25AAE1;
 }
 .hidpi #u4475:hover #u4283{
 	background-image: url("../images/u4283-r_2x5.png");
+	background-size: 100%;
 }
 
 /* FOURTH ITEM */
 #u4481:hover {cursor: pointer;}
 #u4481:hover #u4394 {
 		background-image: url("../images/u4394-r.png");
-		margin-left: 50%;
-		left: -50px;
+		background-size: 100%;
 }
 #u4481:hover #u4427 {
 		color: #25AAE1;
 }
 .hidpi #u4481:hover #u4394{
 	background-image:("../images/u4394_2x3.png");
+	background-size: 100%;
 }
 
 /* FIFTH ITEM */
 #u4487:hover {cursor: pointer;}
 #u4487:hover #u4379 {
 		background-image: url("../images/u4379-r.png");
-		margin-left: 50%;
-		left: -50px;
+		background-size: 100%;
 }
 #u4487:hover #u4439 {
 		color: #25AAE1;
 }
 .hidpi #u4487:hover #u4379{
 	background-image: url("../images/u4379-r_2x3.png");
+	background-size: 100%;
 }
 
 /* SIXTH ITEM */
 #u4493:hover {cursor: pointer;}
 #u4493:hover #u4387 {
 		background-image: url("../images/u4387-r.png");
-		margin-left: 50%;
-    left: -41px;
+		background-size: 100%;
 }
 #u4493:hover #u4451, #u4493:hover #u4451-3 {
 		color: #25AAE1;
 }
 .hidpi #u4493:hover #u4387{
 	background-image: url("../images/u4387-r_2x3.png");
+	background-size: 100%;
 }
 
 
@@ -183,4 +185,26 @@ body#home input, body#home textarea {
 	.LightboxContent {width: 100% !important;}
 	.ContainerGroup {width: 100% !important;}
 	.Container {max-width: 100% !important;}
+}
+
+
+/* FIXES TO MEMBERSHIP ITEMS */
+@media screen and (max-width: 540px) {
+	#u4343-4 {
+		width: 178px !important;
+		left: -92px !important;
+	}
+
+	#u4298, #u4291, #u4283, #u4394, #u4379, #u4387 {
+		transition-duration: 0s !important;
+		-webkit-transition-duration: 0s !important;
+		-moz-transition-duration: 0s !important;
+	}
+}
+
+/* FIXES TO CONTACT HEADER TEXT */
+#contact div.h2White2 {
+	@media screen and (max-width: 540px) and (min-width: 415px){
+		font-size: 60px
+	}
 }
