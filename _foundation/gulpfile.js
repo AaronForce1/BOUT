@@ -40,10 +40,6 @@ var PATHS = {
     'src/assets/js/**/*.js',
     'src/assets/js/app.js'
   ],
-  sitecore: {
-      css: 'dist/assets/css/**/*',
-      javascript: 'dist/assets/js/**/*'
-  },
   output: {
     css: '../Styles',
     javascript: '../Scripts',
@@ -168,6 +164,20 @@ gulp.task('build', function(done) {
   sequence('clean', ['pages', 'sass', 'javascript', 'images', 'copy'], done);
 });
 
+gulp.task('development', function(done) {
+  sequence('clean', ['pages', 'sass', 'javascript', 'images', 'copy'], 'watch');
+});
+
+// Build the site, run the server, and watch for file changes
+gulp.task('watch', function() {
+  gulp.watch(['./src/pages/**/*.html'], ['pages']);
+  gulp.watch(['./src/{layouts,partials}/**/*.html'], ['pages:reset']);
+  gulp.watch(['./src/assets/scss/**/*.scss'], ['sass']);
+  gulp.watch(['./src/partials/**/*.scss'], ['sass']);
+  gulp.watch(['./src/assets/js/**/*.js'], ['javascript']);
+});
+
+
 // Start a server with LiveReload to preview the site in
 gulp.task('server', ['build'], function() {
   browser.init({
@@ -175,16 +185,6 @@ gulp.task('server', ['build'], function() {
   });
 });
 
-
-// Sitecore structure tasks
-gulp.task('copy', function () {
-
-  gulp.src(PATHS.sitecore.css)
-    .pipe(copy(PATHS.output.css, {prefix: 3}));
-
-    gulp.src(PATHS.sitecore.javascript)
-      .pipe(copy(PATHS.output.javascript, {prefix: 3}));
-});
 
 gulp.task('minify-js', function() {
   gulp.src('dist/assets/js/app.js')
@@ -213,9 +213,4 @@ gulp.task('default', ['build', 'server'], function() {
   gulp.watch(['./src/partials/**/*.scss'], ['sass', browser.reload]);
   gulp.watch(['./src/assets/js/**/*.js'], ['javascript', browser.reload]);
   gulp.watch(['./src/assets/img/**/*'], ['images', browser.reload]);
-});
-
-// Build Sitecore files
-gulp.task('sitecore', function(done) {
-  sequence('build',['copy', 'minify-js', 'minify-css'], done);
 });
