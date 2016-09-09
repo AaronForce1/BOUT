@@ -1,8 +1,8 @@
 html {height: auto;}
 body {height: 100%;}
 
-section {
-  margin: 4rem 0;
+section, footer {
+  margin: 3.125rem 0;
 }
 
 // Generic layout classes
@@ -18,6 +18,11 @@ $module: '.lt';
 
       &:hover {color: $secondary-color;}
     }
+
+    // & + .lt-primary-bg-color {
+    //   border: 1px solid $black;
+    //   border-bottom: none;
+    // }
   }
 
   &-alternate-bg-color {
@@ -25,6 +30,17 @@ $module: '.lt';
 
     &-gray {
       background-color: $medium-gray;
+    }
+  }
+
+  &-white-bg-color {
+    background-color: $white;
+    color: $primary-color;
+
+    a {
+      color: $primary-color;
+
+      &:hover {color: $secondary-color;}
     }
   }
 
@@ -64,6 +80,10 @@ $module: '.lt';
       margin-top: 0;
       margin-bottom: 0;
     }
+
+    &-shadow {
+      box-shadow: 0 0 4px $shadow-black;
+    }
   }
 
   &-main-content {
@@ -81,12 +101,17 @@ $module: '.lt';
 
   &-section-padding {
     &-large {
-      padding: 4rem 0;
+      padding: 3.125rem 0;
+
+      &.lt-primary-bg-color {
+        padding-top: 6.25rem;
+        padding-bottom: 6.25rem;
+      }
 
       &>h1 {margin-bottom: 4rem;}
     }
     &-medium {
-      padding: 2rem 0;
+      padding: 3.125rem 0;
 
       &>h1 {margin-bottom: 2rem;}
     }
@@ -115,5 +140,39 @@ $module: '.lt';
     }
     &-content-fluid {
 
+    }
+
+    &-border-folio {
+      border-radius: 3rem 3rem 0 0;
+
+      &-pull-next {
+        &.lt-section-padding {
+          &-large {
+            padding-bottom: 9.375rem;
+          }
+          &-medium {
+            padding-bottom: 7rem;
+          }
+        }
+
+        & + section, & + div {
+          position: relative;
+          top: -4rem;
+          margin: 0 0 4rem;
+        }
+
+      }
+    }
+
+    &-border-radius {
+      border-radius: 4rem;
+
+      &-small {
+        border-radius: 1rem;
+      }
+    }
+
+    &-margin-lower {
+      margin-bottom: 3.125rem;
     }
 }

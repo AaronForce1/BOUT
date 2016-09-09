@@ -1,0 +1,12 @@
+// Generic layout classes
+$module: '.icon';
+#{$module} {
+
+	&-appstore {
+		&-apple {
+			width: 162px;
+			height: 48px;
+		}
+	}
+
+}

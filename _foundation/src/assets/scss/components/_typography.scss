@@ -7,6 +7,13 @@
   }
 }
 
+h1, h2, h3, h4, h5, h6, div, span, a {
+  line-height: 1;
+  margin: 0;
+}
+
+p {margin-bottom: 10px;}
+
 // Classes
 $module: '.type';
 #{$module} {
@@ -15,14 +22,14 @@ $module: '.type';
       color: $primary-color;
       @include font-size(map-get(map-get($header-sizes, medium), h1));
       font: {
-        weight: 700;
+        weight: 500;
       }
     }
     &-large {
       color: $primary-color;
       @include font-size(map-get(map-get($header-sizes, medium), h2));
       font: {
-        weight: 700;
+        weight: 500;
       }
       .btn-align {
         margin: 0.5rem 0;
@@ -32,62 +39,21 @@ $module: '.type';
       color: $body-color;
       @include font-size(map-get(map-get($header-sizes, medium), h3));
       font: {
-        weight: 600;
+        weight: 500;
       }
     }
     &-small {
       color: $body-color;
       @include font-size(map-get(map-get($header-sizes, medium), h4));
       font: {
-        weight: 600;
+        weight: 500;
       }
     }
     &-xsmall {
       color: $body-color;
       @include font-size(map-get(map-get($header-sizes, medium), h5));
       font: {
-        weight: 600;
-      }
-    }
-  }
-  &-subtitle {
-    &-xlarge {
-      color: $body-color;
-      @include font-size(map-get(map-get($header-sizes, subtitle), h1));
-      font: {
-        weight: 400;
-      }
-    }
-    &-large {
-      color: $body-color;
-      @include font-size(map-get(map-get($header-sizes, subtitle), h2));
-      font: {
-        weight: 400;
-      }
-    }
-    &-medium {
-      color: $body-color;
-      @include font-size(map-get(map-get($header-sizes, subtitle), h3));
-      font: {
-        weight: 400;
-      }
-    }
-    &-small {
-      color: $body-color;
-      @include font-size(map-get(map-get($header-sizes, subtitle), h4));
-      font: {
-        weight: 600;
-      }
-      &__no-space {
-        @extend .type-subtitle-small;
-        margin: 0;
-      }
-    }
-    &-xsmall {
-      color: $body-color;
-      @include font-size(map-get(map-get($header-sizes, subtitle), h5));
-      font: {
-        weight: 600;
+        weight: 500;
       }
     }
   }
@@ -97,7 +63,8 @@ $module: '.type';
   }
   &-body-copy {
     color: $body-color;
-    @include font-size(14);
+    @include font-size(20);
+    margin-bottom: 10px;
     &-gray {color: $tertiary-medium-gray;}
     &-semibold {font-weight: 600;}
   }
@@ -128,9 +95,14 @@ $module: '.type';
 a {
   color: $secondary-color;
   font: {
-    family: $body-alternate-font;
+    family: $body-font-family;
     weight: 700;
   }
+
+  &:hover {
+    color: $hover-primary;
+  }
+  
   &.arrow-link {
     font: {
       size: 1.1em;
@@ -175,3 +147,7 @@ ul {
 
 .border-primary {border: 1px solid $primary-color;}
 .border-secondary {border: 1px solid $secondary-color;}
+
+.text-hide {
+  text-indent: -1000rem;
+}

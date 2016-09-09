@@ -1,0 +1,24 @@
+.feature-set {
+
+	.phone-gap {
+		@include flex-grid-column(5, 50px);
+
+		@include breakpoint(iphone down) 
+		{
+			@include flex-grid-column(12);
+
+			.iPhone {
+				float: none;
+				margin: 0 auto 3.125rem;
+			}
+		}
+	}
+
+	.content-blurb {
+		@include flex-grid-column(7, 50px);
+
+		@include breakpoint(iphone down) {
+			@include flex-grid-column(12);
+		}
+	}
+}

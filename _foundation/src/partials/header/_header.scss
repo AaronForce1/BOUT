@@ -1,13 +1,68 @@
-header {height: 100px; -moz-border-radius: 50px; -webkit-border-radius: 50px; border-radius: 50px; margin-top: -25px;}
-	header .mask {height: 25px; width: 100%; position: absolute; margin-top: 25px; z-index: -1;}
-	.header.row {margin-top: 25px; height: 75px;}
+header {
+	height: 100px; 
+	-moz-border-radius: 0 0 50px 50px; 
+	-webkit-border-radius: 0 0 50px 50px; 
+	border-radius: 0 0 50px 50px; 
+	box-shadow: 0 0 4px $shadow-black;
+	position: fixed;
+	top: -25px;
+	left: 0;
+	right: 0;
+	z-index: 999;
+}
+	header .mask {
+		height: 25px; 
+		width: 100%; position: 
+		absolute; 
+		margin-top: 25px; 
+		z-index: -1;
+	}
+	.header.row {
+		height: 75px;
+		top: 25px;
+		position: relative;
+	}
 
-	.header.row>div {height: 100%;}
+	.header.row>div {
+		height: 100%;
+	}
 
-	section h1.logo {background: url(../img/bout_full.png) no-repeat; width: 700px; height: 285px; margin: 0 auto; background-size: contain;}
-	#logo {background: url(../img/bout_logo.png) no-repeat; width: 20px; height: 33px; background-size: contain; position: relative; top: 50%; margin-top: -16.5px;}
+	section h1.logo {
+		background: url(/assets/img/logoBoutFull.png) no-repeat;
+		width: 700px; 
+		height: 285px; 
+		margin: 0 auto; 
+		background-size: contain;
 
-	nav {position: relative; font-size: 16px; top: 50%; margin-top: -11.25px;}
+		font-family: $body-font-family;
+
+		@include breakpoint(iphone down) {
+			width: 500px;
+			height: 180px;
+		}
+	}
+
+	#logo {
+		background: url(../img/bout_logo.png) no-repeat; 
+		width: 20px; 
+		height: 33px; 
+		background-size: contain; 
+		position: absolute; 
+		top: 50%; 
+		margin-top: -20px;
+
+		&-container {
+			width: 20px;
+
+		}
+	}
+
+	nav {
+		position: relative; 
+		font-size: 16px; 
+		top: 50%; 
+		margin-top: -11.25px;
+	}
 		nav ul {display: inline-block; margin: 0; padding: 0;}
 			nav ul li {display: inline-block; margin: 0 25px;}
 

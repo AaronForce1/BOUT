@@ -1,7 +1,51 @@
-section#landing h2 {margin: 20px 0 40px;}
+section#landing h2 {margin: 50px 0;}
 
-.vid-container {margin: 40px auto 0;}
-.vid-container video {width: 100%;}
+.vid-container {
+	margin: 40px auto 0;
+
+	.column.video {
+		@include flex-grid-column(50%, 80px);
+
+		@include breakpoint(medium) {
+			padding-left: 1.5rem;
+			padding-right: 1.5rem;
+		}
+
+		@include breakpoint(iphone down) {
+			padding-left: 1rem;
+			padding-right: 1rem;
+		}
+
+		&:first-child {
+			video, h5 {
+				float: right;
+			}
+		}
+
+		&:last-child {
+			video, h5 {
+				float: left;
+			}
+		}
+
+
+		h5 {
+			clear: both;
+			width: 320px;
+		}
+	}
+
+	video {
+		width: 320px;
+		height: 180px;
+		display: block;
+		margin: 0 auto 10px;
+
+		@include breakpoint(medium down) {
+			width: 100%;
+		}
+	}
+}
 
 
 /* ---- MISSION ---- */
@@ -11,10 +55,38 @@ section#landing h2 {margin: 20px 0 40px;}
 /* ---- CONTRIBUTORS ---- */
 .profileList>div {}
 
-span.arrow {background-image: url(../img/arrows.png); background-repeat: no-repeat; height: 60px; width: 30px; display: block; position: relative; top: 50%; margin-top: -30px;}
+span.arrow {
+	background-image: url(../img/arrows.png); 
+	background-repeat: no-repeat; 
+	height: 60px; 
+	width: 30px; 
+	display: block; 
+	position: relative; 
+	top: 50%; 
+	margin-top: -30px;
+
+	@include breakpoint(iphone down) {
+		margin-top: 0;
+	}
+}
+
 span.arrow.left {}
 span.arrow.right {background-position: -30px 0;}
 
-div.facial.profile {margin: 0 auto; height: 100px; width: 100px; -moz-border-radius: 50px; -webkit-border-radius: 50px; border-radius: 50px; border: 4px solid;}
-div.name h4 {font-weight: 600; font-size: 22px; margin: 10px auto 4px;}
-div.name h5 {font-size: 20px; margin: 0;}
+.profileList {
+	@include breakpoint(iphone down) {
+		padding: 2.5rem 0;
+	}
+}
+
+div.facial.profile {margin: 0 auto; height: 150px; width: 150px; border-radius: 75px; border: 4px solid;}
+div.name h4 {
+	font-weight: 100; 
+	font-size: 22px; 
+	margin: 10px auto 4px;
+
+	@include breakpoint(iphone down) {
+		margin: 3.125rem auto;
+		font-size: 20px;
+	}
+}

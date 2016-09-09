@@ -5,11 +5,14 @@
 // End Custom Mixins
 
 @import 'settings';
+//@import 'settings-v6.0.8';
 @import 'foundation';
 @import 'motion-ui';
+@import 'fonts';
 
 @include foundation-global-styles;
-@include foundation-grid;
+//@include foundation-grid;
+@include foundation-flex-classes;
 @include foundation-flex-grid;
 @include foundation-typography;
 @include foundation-button;
