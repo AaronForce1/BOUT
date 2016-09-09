@@ -10,11 +10,13 @@ var sassGlob = require('gulp-sass-glob');
 var lab = require('gulp-lab');
 var copy = require('gulp-copy');
 var uglify = require('gulp-uglify');
-var minifyCss = require('gulp-minify-css');
+var cssnano = require('gulp-cssnano');
 var rename = require('gulp-rename');
+var gulpif = require('gulp-if');
 
 // Check for --production flag
 var isProduction = !!(argv.production);
+var minifycss = $.if(isProduction, cssnano());
 
 // Port to use for the development server.
 var PORT = 9000;
@@ -29,14 +31,13 @@ var PATHS = {
     '!src/assets/{!img,js,scss}/**/*'
   ],
   sass: [
-    'bower_components/foundation-sites/scss',
-    'bower_components/motion-ui/src/'
+    'node_modules/foundation-sites/scss',
+    'node_modules/motion-ui/src/'
   ],
   javascript: [
-    'bower_components/jquery/dist/jquery.js',
-    'bower_components/what-input/what-input.js',
-    'bower_components/foundation-sites/dist/foundation.js',
-    'bower_components/Vimg/dist/vimg.js',
+    'node_modules/foundation-sites/vendor/jquery/dist/jquery.js',
+    'node_modules/what-input/what-input.js',
+    'node_modules/foundation-sites/dist/foundation.js',
     'src/assets/js/**/*.js',
     'src/assets/js/app.js'
   ],
@@ -104,16 +105,8 @@ gulp.task('pages:reset', ['refresh', 'pages-rebuild', 'reset']);
 
 // Compile Sass into CSS
 // In production, the CSS is compressed
-gulp.task('sass', function() {
-  var uncss = $.if(isProduction, $.uncss({
-    html: ['src/**/*.html'],
-    ignore: [
-      new RegExp('^meta\..*'),
-      new RegExp('^\.is-.*')
-    ]
-  }));
-
-  var minifycss = $.if(isProduction, $.minifyCss());
+gulp.task('sass', function () {
+  var minifycss = $.if(isProduction, cssnano());
 
   return gulp.src('./src/assets/scss/app.scss')
     .pipe(sassGlob())
@@ -128,8 +121,36 @@ gulp.task('sass', function() {
     //.pipe(uncss) Causing issues when in production
     .pipe(minifycss)
     .pipe($.if(!isProduction, $.sourcemaps.write()))
-    .pipe(gulp.dest('./dist/assets/css'));
+    .pipe(gulp.dest('./dist/assets/css'))
+    //.pipe(gulpif(isPublish, gulp.dest(PATHS.publish.css)));
 });
+
+// gulp.task('sass', function() {
+//   var uncss = $.if(isProduction, $.uncss({
+//     html: ['src/**/*.html'],
+//     ignore: [
+//       new RegExp('^meta\..*'),
+//       new RegExp('^\.is-.*')
+//     ]
+//   }));
+
+//   var minifycss = $.if(isProduction, $.minifyCss());
+
+//   return gulp.src('./src/assets/scss/app.scss')
+//     .pipe(sassGlob())
+//     .pipe($.sourcemaps.init())
+//     .pipe($.sass({
+//       includePaths: PATHS.sass
+//     })
+//       .on('error', $.sass.logError))
+//     .pipe($.autoprefixer({
+//       browsers: COMPATIBILITY
+//     }))
+//     //.pipe(uncss) Causing issues when in production
+//     .pipe(minifycss)
+//     .pipe($.if(!isProduction, $.sourcemaps.write()))
+//     .pipe(gulp.dest('./dist/assets/css'));
+// });
 
 // Combine JavaScript into one file
 // In production, the file is minified
