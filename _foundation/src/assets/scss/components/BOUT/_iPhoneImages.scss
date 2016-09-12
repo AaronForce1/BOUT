@@ -1,0 +1,22 @@
+$module: '.iPhone';
+#{$module} {
+	position: relative;
+
+	.demoBG {
+		position: absolute;
+	    top: 65px;
+	    left: 15px;
+	    right: 16px;
+	    bottom: 68px;
+
+		&-features {
+			background: url(../img/homepage/videoFeatures_1x.png) no-repeat;
+			background-size: cover;
+
+			@include breakpoint(iphone down) {
+				background: url(../img/homepage/videoFeatures_2x.png) no-repeat;
+				background-size: 100%;
+			}
+		}
+	}
+}

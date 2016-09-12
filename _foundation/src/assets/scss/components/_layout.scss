@@ -1,8 +1,40 @@
 html {height: auto;}
 body {height: 100%;}
 
-section, footer {
+section {
   margin: 3.125rem 0;
+}
+
+footer {
+  margin: 3.125rem 0 0;
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+
+  .lt-border-folio-pull-next + section, .lt-border-folio-pull-next + div {
+    margin-bottom: 0 !important;
+
+    @include breakpoint(small only) {
+      margin: -4.275rem 0 0;
+    }
+  }
+
+  @include breakpoint(small only) {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.columns, .column {
+  @include breakpoint(small only) {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
+.container {
+  @include breakpoint(small only) {
+    margin-top: -50px;
+  }
 }
 
 // Generic layout classes
@@ -109,6 +141,19 @@ $module: '.lt';
       }
 
       &>h1 {margin-bottom: 4rem;}
+
+      @include breakpoint(small only) {
+        //padding: 1rem 0;
+
+        &.lt-primary-bg-color {
+          padding-top: 3.125rem;
+          padding-bottom: 3.125rem;
+        }
+
+        &>h1 {
+          //margin-bottom: 2rem;
+        }
+      }
     }
     &-medium {
       padding: 3.125rem 0;
@@ -149,6 +194,10 @@ $module: '.lt';
         &.lt-section-padding {
           &-large {
             padding-bottom: 9.375rem;
+
+            @include breakpoint(small only) {
+              padding-bottom: 11.375rem;
+            }
           }
           &-medium {
             padding-bottom: 7rem;
@@ -157,8 +206,12 @@ $module: '.lt';
 
         & + section, & + div {
           position: relative;
-          top: -4rem;
           margin: 0 0 4rem;
+          margin-top: -4rem;
+
+          @include breakpoint(small only) {
+            margin: -6rem 0 2rem;
+          }
         }
 
       }
@@ -174,5 +227,9 @@ $module: '.lt';
 
     &-margin-lower {
       margin-bottom: 3.125rem;
+
+      @include breakpoint(small only) {
+        margin-bottom: 3.125rem;
+      }
     }
 }

@@ -3,6 +3,11 @@ section#landing h2 {margin: 50px 0;}
 .vid-container {
 	margin: 40px auto 0;
 
+	@include breakpoint(iphone down) {
+		padding-top: 7.75rem !important;
+		padding-bottom: 10.775rem !important;
+	}
+
 	.column.video {
 		@include flex-grid-column(50%, 80px);
 
@@ -11,9 +16,10 @@ section#landing h2 {margin: 50px 0;}
 			padding-right: 1.5rem;
 		}
 
-		@include breakpoint(iphone down) {
-			padding-left: 1rem;
-			padding-right: 1rem;
+		@include breakpoint(small only) {
+			@include flex-grid-column(100%, 0px);
+			padding-left: 0;
+			padding-right: 0;
 		}
 
 		&:first-child {
@@ -32,6 +38,10 @@ section#landing h2 {margin: 50px 0;}
 		h5 {
 			clear: both;
 			width: 320px;
+
+			@include breakpoint(medium down) {
+				width: 100%;
+			}
 		}
 	}
 
@@ -43,6 +53,10 @@ section#landing h2 {margin: 50px 0;}
 
 		@include breakpoint(medium down) {
 			width: 100%;
+		}
+
+		@include breakpoint(iphone down) {
+			height: 215px;
 		}
 	}
 }
@@ -62,8 +76,7 @@ span.arrow {
 	width: 30px; 
 	display: block; 
 	position: relative; 
-	top: 50%; 
-	margin-top: -30px;
+	cursor: pointer;
 
 	@include breakpoint(iphone down) {
 		margin-top: 0;
@@ -73,9 +86,15 @@ span.arrow {
 span.arrow.left {}
 span.arrow.right {background-position: -30px 0;}
 
+.arrow {
+	&-wrap {
+	}
+}
+
 .profileList {
+
 	@include breakpoint(iphone down) {
-		padding: 2.5rem 0;
+		padding:0;
 	}
 }
 

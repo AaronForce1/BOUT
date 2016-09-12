@@ -41,12 +41,20 @@ $module: '.type';
       font: {
         weight: 500;
       }
+
+      @include breakpoint(small only) {
+        font-size: 1.4rem;
+      }
     }
     &-small {
       color: $body-color;
       @include font-size(map-get(map-get($header-sizes, medium), h4));
       font: {
         weight: 500;
+      }
+
+      @include breakpoint(small only) {
+        font-size: 1.2rem;
       }
     }
     &-xsmall {

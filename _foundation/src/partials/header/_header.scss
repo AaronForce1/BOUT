@@ -1,11 +1,10 @@
 header {
-	height: 100px; 
 	-moz-border-radius: 0 0 50px 50px; 
 	-webkit-border-radius: 0 0 50px 50px; 
 	border-radius: 0 0 50px 50px; 
 	box-shadow: 0 0 4px $shadow-black;
 	position: fixed;
-	top: -25px;
+	top: 0;
 	left: 0;
 	right: 0;
 	z-index: 999;
@@ -19,7 +18,6 @@ header {
 	}
 	.header.row {
 		height: 75px;
-		top: 25px;
 		position: relative;
 	}
 
@@ -39,6 +37,11 @@ header {
 		@include breakpoint(iphone down) {
 			width: 500px;
 			height: 180px;
+		}
+
+		@include breakpoint(small only) {
+			width: 280px;
+			height: 101px;
 		}
 	}
 
