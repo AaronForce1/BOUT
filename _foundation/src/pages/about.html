@@ -1,0 +1,47 @@
+{{> about-heading}}
+
+<section id="founders" class="lt-section-padding-large lt-primary-bg-color lt-border-folio lt-border-folio-pull-next">
+	<h2 class="lt-margin-lower">Founders</h2>
+	
+	<div class="row">
+		{{#repeat 3}}
+	          {{> team-member-details}}
+	    {{/repeat}}
+    </div>
+
+</section>
+
+<section id="contributors" class="lt-section-padding-large lt-white-bg-color lt-border-folio">
+	<h2 class="lt-section-padding-small">Contributors</h2>
+
+	<div class="row">
+		{{#repeat 9}}
+	          {{> team-member-blocks}}
+	    {{/repeat}}
+    </div>
+
+</section>
+
+<section id="team" class="lt-section-padding-large lt-primary-bg-color lt-border-folio lt-border-folio-pull-next">
+	<h2 class="lt-section-padding-small">Team</h2>
+
+	<div class="row">
+		{{#repeat 3}}
+	          {{> team-member-blocks}}
+	    {{/repeat}}
+
+	    <!-- NEED TO REMOVE DESCRIPTIONS HERE -->
+    </div>
+</section>
+
+<section id="contact" class="lt-section-padding-large lt-white-bg-color lt-border-folio">
+	<h5 class="type-body-copy lt-section-padding-medium">Sign up for the B • OUT Newsletter to receive news and updates from us. </h5>
+	<form class="form row align-center">
+		<div class="input-wrapper column small-12 medium-8 large-6">
+			<input class="input" type="email" name="email" placeholder="Email Address...">
+		</div>
+		<div class="columns small-12">
+			<button class="btn btn-bout" type="submit">Submit</button>
+		</div>
+	</form>
+</section>

@@ -6,12 +6,13 @@ section {
 }
 
 footer {
-  margin: 3.125rem 0 0;
-  padding-bottom: 0 !important;
-  margin-bottom: 0 !important;
+  // margin: 3.125rem 0 0;
+  // padding-bottom: 0 !important;
+  // margin-bottom: 0 !important;
 
   .lt-border-folio-pull-next + section, .lt-border-folio-pull-next + div {
     margin-bottom: 0 !important;
+    margin-top: -4.275rem;
 
     @include breakpoint(small only) {
       margin: -4.275rem 0 0;
@@ -207,7 +208,8 @@ $module: '.lt';
         & + section, & + div {
           position: relative;
           margin: 0 0 4rem;
-          margin-top: -4rem;
+          margin-top: -6rem;
+
 
           @include breakpoint(small only) {
             margin: -6rem 0 2rem;
