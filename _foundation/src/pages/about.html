@@ -1,47 +1,37 @@
 {{> about-heading}}
 
-<section id="founders" class="lt-section-padding-large lt-primary-bg-color lt-border-folio lt-border-folio-pull-next">
+<section id="founders" class="lt-section-padding-large lt-primary-bg-color">
 	<h2 class="lt-margin-lower">Founders</h2>
 	
 	<div class="row">
-		{{#repeat 3}}
-	          {{> team-member-details}}
-	    {{/repeat}}
+		{{#each team.founders}}
+	          {{> team-member-details socialColor='white'}}
+	    {{/each}}
     </div>
 
 </section>
 
-<section id="contributors" class="lt-section-padding-large lt-white-bg-color lt-border-folio">
+<section id="contributors" class="lt-section-padding-large lt-white-bg-color">
 	<h2 class="lt-section-padding-small">Contributors</h2>
 
 	<div class="row">
-		{{#repeat 9}}
-	          {{> team-member-blocks}}
-	    {{/repeat}}
+		{{#each team.contributors}}
+	          {{> team-member-blocks kind='grid' socialColor='blue'}}
+	    {{/each}}
+
+	    <!-- DESCRIPTION IS A LITTLE TOO LONG -->
     </div>
 
 </section>
 
-<section id="team" class="lt-section-padding-large lt-primary-bg-color lt-border-folio lt-border-folio-pull-next">
+<section id="team" class="lt-section-padding-large lt-primary-bg-color">
 	<h2 class="lt-section-padding-small">Team</h2>
 
 	<div class="row">
-		{{#repeat 3}}
-	          {{> team-member-blocks}}
-	    {{/repeat}}
+		{{#each team.team}}
+	          {{> team-member-blocks kind='short' socialColor='white'}}
+	    {{/each}}
 
 	    <!-- NEED TO REMOVE DESCRIPTIONS HERE -->
     </div>
-</section>
-
-<section id="contact" class="lt-section-padding-large lt-white-bg-color lt-border-folio">
-	<h5 class="type-body-copy lt-section-padding-medium">Sign up for the B • OUT Newsletter to receive news and updates from us. </h5>
-	<form class="form row align-center">
-		<div class="input-wrapper column small-12 medium-8 large-6">
-			<input class="input" type="email" name="email" placeholder="Email Address...">
-		</div>
-		<div class="columns small-12">
-			<button class="btn btn-bout" type="submit">Submit</button>
-		</div>
-	</form>
 </section>

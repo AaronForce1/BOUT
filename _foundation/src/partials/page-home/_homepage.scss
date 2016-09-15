@@ -11,7 +11,7 @@ section#landing h2 {margin: 50px 0;}
 	.column.video {
 		@include flex-grid-column(50%, 80px);
 
-		@include breakpoint(medium) {
+		@include breakpoint(medium down) {
 			padding-left: 1.5rem;
 			padding-right: 1.5rem;
 		}

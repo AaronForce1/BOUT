@@ -7,7 +7,7 @@ footer .social a {
 	justify-content:center;
 	display: inline-block;
 
-	@include breakpoint(large down) {
+	@include breakpoint(medium down) {
 		width: 100px;
 		height: 100px;
 		background-size: 200%;
@@ -45,7 +45,7 @@ footer .social a {
 	a#facebook {
 		background-position-y: -120px;
 
-		@include breakpoint(large down) {
+		@include breakpoint(medium down) {
 			background-position-y: -100px;
 		}
 
@@ -57,7 +57,7 @@ footer .social a {
 	a#twitter {
 		background-position-y: -240px;
 
-		@include breakpoint(large down) {
+		@include breakpoint(medium down) {
 			background-position-y: -200px;
 		}
 
@@ -69,7 +69,7 @@ footer .social a {
 	a#instagram {
 		background-position-y: -360px;
 
-		@include breakpoint(large down) {
+		@include breakpoint(medium down) {
 			background-position-y: -300px;
 		}
 
@@ -82,7 +82,7 @@ footer .social a {
 	a#web {
 		background-position-y: -480px;
 
-		@include breakpoint(large down) {
+		@include breakpoint(medium down) {
 			background-position-y: -400px;
 		}
 
@@ -95,7 +95,12 @@ footer .social a {
 div.mailing {margin: 100px 0;}
 	.mailing input {min-width: 300px;}
 
-div.legalities {height: 75px; position: relative; font-size: 18px;}
+div.legalities {
+	height: 84px; 
+	position: relative; 
+	font-size: 18px;
+	margin-top: -4rem;
+}
 	.legalities p {margin: 25px 0 0;}
 
 footer .mask {position: absolute; height: 40px; bottom: 0; width: 100%; z-index: -1;}

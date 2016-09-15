@@ -24,6 +24,18 @@ p {
 	}
 }
 
+.container {
+	section {
+		&:last-child {
+			margin-bottom: 0 !important;
+
+			&.lt-primary-bg-color {
+				border-bottom: 1px solid $shadow-black;
+			}
+		}
+	}
+}
+
 
 .btn-bout {
 	font-size: 20px; 

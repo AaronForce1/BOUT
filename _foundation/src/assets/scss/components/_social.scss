@@ -25,4 +25,24 @@ $module: '.social';
 			background-image: url(/assets/img/Footer_Social_06.png);
 		}
 	}
+
+	&-white {
+		a {
+			display: none;
+
+			&.white {
+				display: block;
+			}
+		}
+	}
+
+	&-blue {
+		a {
+			display: none;
+
+			&.blue {
+				display: block;
+			}
+		}
+	}
 }

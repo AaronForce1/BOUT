@@ -1,8 +1,8 @@
 header {
 	-moz-border-radius: 0 0 50px 50px; 
 	-webkit-border-radius: 0 0 50px 50px; 
-	border-radius: 0 0 50px 50px; 
-	box-shadow: 0 0 4px $shadow-black;
+	border-radius: 0 0 32px 32px; 
+	box-shadow: 0 4px 0 $shadow-black;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -17,7 +17,7 @@ header {
 		z-index: -1;
 	}
 	.header.row {
-		height: 75px;
+		height: 84px;
 		position: relative;
 	}
 

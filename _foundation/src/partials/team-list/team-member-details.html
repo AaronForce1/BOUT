@@ -2,22 +2,26 @@
   <div class="row align-center">
     <div class="column shrink small-10 text-center align-self-top">
       <div class="facial profile">
-        <img/>
+        <img src="/assets/img/avatar/{{img}}" />
       </div>
     </div>
     <div class="column iphone-expand small-12">
       <div class="content profile text-left">
         <div class="name row column text-center medium-text-left">
-          <h4>Aaron Baideme - Technical Editor</h4>
+          <h4>{{name}} - {{title}}</h4>
         </div>
+        {{#if social}}
         <div class="social-connect-container row text-center medium-text-left lt-section-padding-small">
-          <div class="column shrink">
-            <img src="/assets/img/icon/twitter/whiteSmall.png"/>
-          </div>
+          {{#each social}}
+            <div class="column shrink">
+              <a class="{{type}} social-link" href="{{link}}" target="_blank"><img src="/assets/img/icon/{{type}}/whiteSmall.png"/></a>
+            </div>
+          {{/each}}
         </div>
+        {{/if}}
         <div class="row column text-center medium-text-left">
           <p>
-            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+            {{description}}
           </p>
         </div>
       </div>

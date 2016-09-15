@@ -1,0 +1,147 @@
+founders:
+  -
+    name: "Mark Willett"
+    title: "Chief Executive Officer"
+    description: "Mark Willett is a Co-Founder and CEO of B • OUT. An entrepreneur seeking a fundamental shift in the script of LGBTQ culture, B • OUT is Mark’s brainchild. He has traveled the world and paid witness to the incredible diversity of our global LGBTQ community and believes the time has come for us to reconnect with our roots and work toward a more perfect future—together. Mark lives in New York City."
+    img: "founders/markwillett.png"
+    social: 
+      -
+        type: "twitter"
+        link: "https://twitter.com/markswillett"
+  -
+    name: "Daniel Pando"
+    title: "Chief Design Officer"
+    description: "Daniel Pando is the founder and CEO of Captured Energy, a boutique digital media agency. He specializes in branding and digital strategy for established brands and startups alike. His passion is user-centric design, turning complex concepts into elegant user experiences. Daniel is a Co-Founder and Chief Design Officer for B • OUT, and lives in New York City."
+    img: "founders/danielpando.png"
+    social: 
+      -
+        type: "twitter"
+        link: "https://twitter.com/daniel_pando"
+  -
+    name: "Thomas Falconer"
+    title: "Chief Editorial Officer"
+    description: "Thomas Falconer has over 20 years experience crafting digital, social, and content strategy for some of the web’s biggest brands and startups. He is currently the Director of Content Strategy on the IBM team at Ogilvy and Mather, and teaches in the Integrated Marketing Masters Program at NYU. Thomas is Co-Founder and Chief Content Officer for B • OUT, and lives in New York City."
+    img: "founders/thomasfalconer.png"
+    social:
+      -
+        type: "twitter"
+        link: "https://twitter.com/thomasfalconer"
+contributors:
+  -
+    name: "Juan Biel"
+    title: "Gaming"
+    shortbio: "Video editor and producer for Rockstar Games."
+    description: "Long Description"
+    img: "contributors/juanbiel.png"
+    social:
+      -
+        type: "twitter"
+        link: "https://twitter.com/Juanjon02"
+  -
+    name: "Maxwell Coviello"
+    title: "Gaming"
+    shortbio: "Video game writer for Next Magazine and Pixelitis."
+    description: "Long Description"
+    img: "contributors/maxwellcoviello.png"
+    social:
+      -
+        type: "twitter"
+        link: "https://twitter.com/Wile_E_Quixote"
+  -
+    name: "David Duran"
+    title: "Travel"
+    shortbio: "Award-winning travel writer, nationally renowned HIV activist."
+    description: "David is an award winning travel writer, and a regular contributor to Travel+Leisure, Jetsetter, Condé Nast Travel, and Fodor’s. He is also a nationally recognized writer on HIV."
+    img: "contributors/davidduran.png"
+    social:
+      -
+        type: "twitter"
+        link: "https://twitter.com/mrdavidduran"
+  -
+    name: "Matthew Griffin"
+    title: "Fitness"
+    shortbio: "Personal trailer at David Barton Gym & Barry's Bootcamp."
+    description: "Long Description"
+    img: "contributors/matthewgriffin.png"
+    social:
+      -
+        type: "twitter"
+        link: "https://twitter.com/MattGriff011"
+  -
+    name: "Damon Jacobs"
+    title: "Health"
+    shortbio: "World renowned PrEP advocate, LGBTQ therapist and relationship counselor."
+    description: Damon is a renowned global advocate for PrEP, recognized by the W.H.O as having the best source of information about PrEP on the internet. He is also a mental health professional, and has published two books, "Rational Relating", and "Absolutely Should-Less."
+    img: "contributors/Damonjacobs.png"
+    social:
+      -
+        type: "twitter"
+        link: "https://twitter.com/DamonLJacobs"
+  -
+    name: "Courtney Kornegay"
+    title: "Style"
+    shortbio: "Entertainment Report for Manmade Multimedia.  Co-hosted ‘Ready, Set, TargetStyle’."
+    description: "Courtney is an emcee for various fashion events across the nation. He co-hosted 'Ready, Set, TargetStyle', and covered red carpet premiers for Manmade Multimedia in Los Angeles."
+    img: "contributors/courtneykornegay.png"
+    social:
+      -
+        type: "twitter"
+        link: "https://twitter.com/thecourtwalk"
+  -
+    name: "Erica Rose"
+    titlke: "Film"
+    shortbio: "Showtime Networks. Associate producer for Beyonce Knowles' 'Parkwood Entertainment'."
+    description: "Long Description"
+    img: "contributors/ericarose.png"
+    social:
+      -
+        type: "linkedin"
+        link: "https://www.linkedin.com/in/erica-rose-842aaa54"
+  -
+    name: "Davina Thomasula"
+    title: "Food & Drink"
+    shortbio: "Named one of New York’s top bartenders of 2015 by TimeOut Magazine. Vice President of Culinary Content at ‘Fork & Plate’."
+    description: "Davina was named one of the 2015 Top Ten Bartenders in NYC by TimeOut Magazine, and a contestant on Food Network's Cutthroat Kitchen. She is the Vice President of Culinary Content for Fork & Plate."
+    img: "contributors/davinathomasula.png"
+    social:
+      -
+        type: "twitter"
+        link: "https://twitter.com/ThomasulaDavina"
+  -
+    name: "Igor Zukowiec"
+    title: "Drink"
+    shortbio: "Founder of ALCHEMIQ Catering. Drink stylist for the restaurants Hakkasan, La Mar, Barraca."
+    description: "Long Description"
+    img: "contributors/igorzukowiec.png"
+    social:
+      -
+        type: "twitter"
+        link: "https://twitter.com/igorzukowiec"
+team:
+  -
+    name: "Dennis Corsi"
+    title: "Video"
+    description: ""
+    img: "team/denniscorsi.png"
+    social:
+      -
+        type: "twitter"
+        link: "https://twitter.com/CorsiDennis"
+  -
+    name: "Kevin Dannenberg"
+    title: "Design"
+    description: ""
+    img: "team/kevindannenberg.png"
+    social:
+      -
+        type: "twitter"
+        link: "https://twitter.com/KevDannenberg"
+  -
+    name: "Andrew Michaelsen"
+    title: "Operations"
+    description: ""
+    img: "team/andrewmichaelsen.png"
+    social:
+      -
+        type: "twitter"
+        link: "https://twitter.com/manhattanvirgo"
