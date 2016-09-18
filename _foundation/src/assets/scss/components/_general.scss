@@ -60,11 +60,39 @@ p {
 }
 .iPhone {
 	min-height: 564px; 
-	width: 275px; 
-	background: url(../img/iphone_wireframe.png) no-repeat; 
-	background-size: contain;
-	float: right;
+	width: 275px;
+
+	&.right {
+		float: right;
+	}
+	&.left {
+		float: left;
+	}
+}
+
+.lt-primary-bg-color {
+	.iPhone {
+		background: url(../img/iphone_wireframe-white.png) no-repeat; 
+		background-size: contain;
+	}
+}
+
+.lt-white-bg-color {
+	.iPhone {
+		background: url(../img/iphone_wireframe-blue.png) no-repeat; 
+		background-size: contain;
+	}
 }
 
 input {height: 34px; -moz-border-radius: 17px; -webkit-border-radius: 17px; border-radius: 17px; border: 2px solid; padding: 10px; font-size: 12px;}
 
+html {
+	.no-svg {
+		display: none;
+	}
+	&.no-svg {
+		.no-svg {
+			display: block;
+		}
+	}
+}

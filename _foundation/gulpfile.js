@@ -163,6 +163,7 @@ gulp.task('javascript', function() {
   return gulp.src(PATHS.javascript)
     .pipe($.sourcemaps.init())
     .pipe($.concat('app.js'))
+    //.pipe(modernizr())
     .pipe(uglify)
     .pipe($.if(!isProduction, $.sourcemaps.write()))
     .pipe(gulp.dest('./dist/assets/js'));
@@ -193,9 +194,11 @@ gulp.task('development', function(done) {
 gulp.task('watch', function() {
   gulp.watch(['./src/pages/**/*.html'], ['pages']);
   gulp.watch(['./src/{layouts,partials}/**/*.html'], ['pages:reset']);
+  gulp.watch(['./src/data/**/*.yml'], ['pages:reset']);
   gulp.watch(['./src/assets/scss/**/*.scss'], ['sass']);
   gulp.watch(['./src/partials/**/*.scss'], ['sass']);
   gulp.watch(['./src/assets/js/**/*.js'], ['javascript']);
+  gulp.watch(['./src/assets/img/*'], ['copy']);
 });
 
 

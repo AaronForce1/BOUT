@@ -46,6 +46,10 @@ $module: '.lt';
     background-color: $primary-color;
     color: $white;
 
+    h1, h2, h3, h4, h5, h6, p {
+      color: white;
+    }
+
     a {
       color: white;
 
@@ -235,10 +239,18 @@ $module: '.lt';
     }
 
     &-margin-lower {
-      margin-bottom: 3.125rem;
+      margin-bottom: 3.125rem !important;
 
       @include breakpoint(small only) {
-        margin-bottom: 3.125rem;
+        margin-bottom: 3.125rem !important;
       }
+
+      &-small {
+        margin-bottom: 1.25rem !important;
+      }
+    }
+
+    &-pull-up {
+      margin-top: -4rem;
     }
 }

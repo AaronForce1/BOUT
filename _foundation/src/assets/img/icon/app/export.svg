@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>icon / canvas / whiteSmall</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,36.1244591 C0,33.3384813 2.25810242,31.08 5.04530549,31.08 L36.9546945,31.08 C39.7411398,31.08 42,33.3426311 42,36.1244591 L42,41.5852575 C42,41.8143135 41.812746,42 41.5843112,42 L0.415688753,42 C0.186110194,42 0,41.810463 0,41.5852575 L0,36.1244591 Z M14.5258365,11.5998063 C14.0084113,12.2149652 13.1694993,12.2149652 12.652074,11.5998063 C12.1346488,10.9846474 12.1346488,9.98727775 12.652074,9.37211886 L20.1471239,0.461369171 C20.6645491,-0.153789724 21.5034611,-0.153789724 22.0208864,0.461369171 L29.5159362,9.37211886 C30.0333614,9.98727775 30.0333614,10.9846474 29.5159362,11.5998063 C28.998511,12.2149652 28.159599,12.2149652 27.6421738,11.5998063 L22.314794,5.26616625 L22.314794,24.4776212 C22.314794,25.3330579 21.7215936,26.04 20.9898438,26.04 C20.2529924,26.04 19.6648937,25.336551 19.6648937,24.4688028 L19.6648937,5.49006012 L14.5258365,11.5998063 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="42" height="42" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="App" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-221.000000, -5754.000000)" id="Ergonomics" stroke="#1B75BC" stroke-width="5.04">
+            <g transform="translate(0.000000, 5280.000000)">
+                <g id="Group-3" transform="translate(221.000000, 209.000000)">
+                    <g id="Group" transform="translate(0.000000, 130.000000)">
+                        <g id="icon-/-touchpad-/-blue" transform="translate(0.000000, 135.000000)">
+                            <use id="iconTouchpad" mask="url(#mask-2)" xlink:href="#path-1"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

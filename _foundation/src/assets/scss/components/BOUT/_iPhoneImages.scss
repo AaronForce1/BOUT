@@ -4,10 +4,6 @@ $module: '.iPhone';
 
 	.demoBG {
 		position: absolute;
-	    top: 65px;
-	    left: 15px;
-	    right: 16px;
-	    bottom: 68px;
 
 		&-features {
 			background: url(../img/homepage/videoFeatures_1x.png) no-repeat;
@@ -17,6 +13,28 @@ $module: '.iPhone';
 				background: url(../img/homepage/videoFeatures_2x.png) no-repeat;
 				background-size: 100%;
 			}
+		}
+	}
+}
+
+.lt-primary-bg-color {
+	#{$module} {
+		.demoBG {
+			top: 65px;
+		    left: 15px;
+		    right: 16px;
+		    bottom: 68px;
+		}
+	}
+}
+
+.lt-white-bg-color {
+	#{$module} {
+		.demoBG {
+			top: 65px;
+		    left: 20px;
+		    right: 20px;
+		    bottom: 82px;
 		}
 	}
 }

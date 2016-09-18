@@ -1,0 +1,37 @@
+{{> app-heading}}
+
+<section id="member-features" class="lt-section-padding-medium lt-primary-bg-color">
+	<h2>Members</h2>
+	<h5 class="type-body-copy white">Free</h5>
+	
+	<div class="row align-center lt-section-padding-medium">
+		{{#each app-content.members}}
+	        {{> icon-blocks render='columns'}}
+	    {{/each}}
+    </div>
+</section>
+
+<section id="member-premium" class="lt-section-padding-medium lt-white-bg-color">
+	<h2>Premium</h2>
+	<h5 class="type-body-copy lt-margin-lower">$6.99 per month</h5>
+
+	<h3 class="type-header-small row columns small-12 medium-8 lt-margin-lower">Members get access to the full feature set and can participate in all interactive features on B • OUT</h3>
+
+	<div class="row align-center">
+		{{#each app-content.premium}}
+			{{> icon-blocks render='columns'}}
+		{{/each}}
+	</div>
+</section>
+
+{{> app-profile}}
+
+{{> app-discussions}}
+
+{{> app-messages}}
+
+{{> app-people}}
+
+{{> app-navigation}}
+
+{{> app-ergonomics}}

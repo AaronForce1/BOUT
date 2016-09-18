@@ -1,0 +1,40 @@
+.featured-img {
+	margin-bottom: 1rem;
+}
+
+
+.iconBlocks {
+	&.row {
+		.featured-img {
+			img, svg {
+				height: 42px;
+				width: 42px;
+			}
+		}
+	}
+
+	&.columns {
+		.featured-img {
+			img, svg {
+				height: 72px;
+				width: 72px;
+			}
+		}
+	}
+}
+
+.lt-primary-bg-color {
+	.featured-img {
+		svg {
+			fill: #FAFAFA;
+		}
+	}
+}
+
+.lt-white-bg-color {
+	.featured-img {
+		svg {
+			fill: #1B75BC;
+		}
+	}
+}

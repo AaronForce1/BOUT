@@ -1,0 +1,31 @@
+{{#compare render "columns" operator="=="}}
+<div class="columns iconBlocks">
+	<div class="featured-img row columns">
+		{{#if svg}}
+			{{> (lookup . 'svg')}}
+			<img class="no-svg" src="/assets/img/icon/{{img}}" />
+		{{else}}
+			<img src="/assets/img/icon/{{img}}" />
+		{{/if}}
+	</div>
+	<h4 class="type-header-xsmall row columns">{{description}}</h4>
+</div>
+{{/compare}}
+
+{{#compare render "row" operator="=="}}
+<div class="row iconBlocks lt-margin-lower-small">
+	<div class="columns shrink">
+		<div class="featured-img">
+			{{#if svg}}
+				{{> (lookup . 'svg')}}
+				<img class="no-svg" src="/assets/img/icon/{{img}}" />
+			{{else}}
+				<img src="/assets/img/icon/{{img}}" />
+			{{/if}}
+		</div>
+	</div>
+	<div class="columns expand">
+		<h4 class="type-header-xsmall text-left">{{description}}</h4>
+	</div>
+</div>
+{{/compare}}
