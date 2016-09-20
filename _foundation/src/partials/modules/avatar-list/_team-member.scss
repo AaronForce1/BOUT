@@ -12,6 +12,16 @@
   }
 
   &-details {
+    .avatar {
+      @include breakpoint(medium up) {
+        padding-right: .5rem !important;
+      }
+      &-content {
+        @include breakpoint(medium up) {
+          padding-left: .5rem !important;
+        }
+      }
+    }
     .name {
       h4 {
         margin: 0 auto;
