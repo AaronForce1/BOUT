@@ -1,7 +1,7 @@
 header {
-	-moz-border-radius: 0 0 50px 50px; 
-	-webkit-border-radius: 0 0 50px 50px; 
-	border-radius: 0 0 32px 32px; 
+	-moz-border-radius: 0 0 50px 50px;
+	-webkit-border-radius: 0 0 50px 50px;
+	border-radius: 0 0 32px 32px;
 	box-shadow: 0 4px 0 $shadow-black;
 	position: fixed;
 	top: 0;
@@ -28,9 +28,9 @@ header {
 
 	section h1.logo {
 		background: url(/assets/img/logoBoutFull.png) no-repeat;
-		width: 700px; 
-		height: 285px; 
-		margin: 0 auto; 
+		width: 700px;
+		height: 285px;
+		margin: 0 auto;
 		background-size: contain;
 
 		font-family: $body-font-family;
@@ -47,12 +47,12 @@ header {
 	}
 
 	#logo {
-		background: url(../img/bout_logo.png) no-repeat; 
-		width: 20px; 
-		height: 33px; 
-		background-size: contain; 
-		position: absolute; 
-		top: 50%; 
+		background: url(../img/bout_logo.png) no-repeat;
+		width: 20px;
+		height: 33px;
+		background-size: contain;
+		position: absolute;
+		top: 50%;
 		margin-top: -20px;
 
 		&-container {
@@ -62,13 +62,52 @@ header {
 	}
 
 	nav {
-		position: relative; 
-		font-size: 16px; 
-		top: 50%; 
+		position: relative;
+		font-size: 16px;
+		top: 50%;
 		margin-top: -11.25px;
+
+		.nav {
+			&-column {
+				@include flex-grid-column(null, 0);
+
+				&-logo {
+					@include flex-grid-column(shrink, 0);
+				}
+			}
+
+			&-left {
+				li {
+					float: right;
+				}
+			}
+			&-right {
+				li {
+					float: left;
+				}
+			}
+		}
+
+		ul {
+			display: inline-block;
+			margin: 0;
+			padding: 0;
+
+			li {
+				display: inline-block;
+				margin: 0 3.75rem;
+
+				@include breakpoint(large down) {
+					margin: 0 2.75rem;
+				}
+
+				@include breakpoint(medium down) {
+					margin: 0 2rem;
+				}
+			}
+		}
 	}
-		nav ul {display: inline-block; margin: 0; padding: 0;}
-			nav ul li {display: inline-block; margin: 0 25px;}
+
 
 	#ellipses {position: relative; top: 50%; margin-top: -2px; line-height: 0;}
 		#ellipses .dots>span {display: inline-block; width: 4px; height: 4px; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; background: white;}
