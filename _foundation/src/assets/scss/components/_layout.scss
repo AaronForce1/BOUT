@@ -3,6 +3,13 @@ body {height: 100%;}
 
 section {
   margin: 3.125rem 0;
+
+  &>.title {
+    &-tertiary {
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+  }
 }
 
 footer {
