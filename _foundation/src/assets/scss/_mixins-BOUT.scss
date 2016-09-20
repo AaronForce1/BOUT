@@ -1,0 +1,47 @@
+@mixin lt-section-padding($padding-size: large) {
+  @if $padding-size == "large" {
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+
+    &.lt-primary-bg-color {
+      padding-top: 6.25rem;
+      padding-bottom: 6.25rem;
+    }
+
+    &>h1 {margin-bottom: 4rem;}
+
+    @include breakpoint(small only) {
+      //padding: 1rem 0;
+
+      &.lt-primary-bg-color {
+        padding-top: 3.125rem;
+        padding-bottom: 3.125rem;
+      }
+
+      &>h1 {
+        //margin-bottom: 2rem;
+      }
+    }
+  }
+
+  @if $padding-size == "medium" {
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+
+    &>h1 {margin-bottom: 2rem;}
+  }
+
+  @if $padding-size == "small" {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+
+    &>h1 {margin-bottom: 1.25rem;}
+  }
+
+  @if $padding-size == "xsmall" {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    &>h1 {margin-bottom: 1rem;}
+  }
+}

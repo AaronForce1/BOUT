@@ -50,7 +50,7 @@ $module: '.lt';
       color: white;
     }
 
-    a { 
+    a {
       color: white;
 
       &:hover {color: $secondary-color;}
@@ -171,7 +171,15 @@ $module: '.lt';
 
       &>h1 {margin-bottom: 2rem;}
     }
+
     &-small {
+      padding-top: 1.25rem;
+      padding-bottom: 1.25rem;
+
+      &>h1 {margin-bottom: 1.25rem;}
+    }
+
+    &-xsmall {
       padding-top: 1rem;
       padding-bottom: 1rem;
 
