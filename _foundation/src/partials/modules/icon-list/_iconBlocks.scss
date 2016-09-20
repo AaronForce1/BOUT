@@ -5,11 +5,23 @@
 
 .iconBlocks {
 	&.row {
+		&>.columns, &>.column {
+			&:first-child {
+				padding-right: .5rem !important;
+			}
+			&:last-child {
+				padding-left: .5rem !important;
+			}
+		}
 		.featured-img {
 			img, svg {
 				height: 42px;
 				width: 42px;
 			}
+		}
+
+		&:last-child {
+			margin-bottom: 0 !important;
 		}
 	}
 
