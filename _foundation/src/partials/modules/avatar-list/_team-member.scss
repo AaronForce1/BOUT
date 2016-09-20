@@ -1,0 +1,47 @@
+.team {
+  &-blocks {
+    .name {
+      h4 {
+        margin: 10px auto 4px;
+
+        @include breakpoint(iphone down) {
+            margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+
+  &-details {
+    .name {
+      h4 {
+        margin: 0 auto;
+      }
+      @include breakpoint(iphone down) {
+        @include lt-section-padding(small);
+      }
+    }
+
+    .social-connect-container {
+      @include flex-align(left, null);
+
+      @include breakpoint(medium up) {
+        @include lt-section-padding(small);
+      }
+
+      @include breakpoint(iphone down) {
+        @include flex-align(center, null)
+      }
+    }
+
+    .desc {
+      @include breakpoint(iphone down) {
+        @include lt-section-padding(small);
+      }
+
+      @include breakpoint(iphone down) {
+        padding-left: 1.25rem !important;
+        padding-right: 1.25rem !important;
+      }
+    }
+  }
+}

@@ -1,4 +1,4 @@
-<div class="column small-12 lt-section-padding-medium">
+<div class="column small-12 lt-section-padding-medium team-details">
   <div class="row align-center">
     <div class="column shrink small-10 text-center align-self-top">
       <div class="facial profile">
@@ -11,7 +11,7 @@
           <h4>{{name}} • {{title}}</h4>
         </div>
         {{#if social}}
-        <div class="social-connect-container row text-center medium-text-left lt-section-padding-small">
+        <div class="social-connect-container row">
           {{#each social}}
             <div class="column shrink">
               <a class="{{type}} social-link" href="{{link}}" target="_blank"><img src="/assets/img/icon/{{type}}/whiteSmall.png"/></a>
@@ -19,7 +19,7 @@
           {{/each}}
         </div>
         {{/if}}
-        <div class="row column text-center medium-text-left">
+        <div class="row column text-left desc">
           <p>
             {{description}}
           </p>
