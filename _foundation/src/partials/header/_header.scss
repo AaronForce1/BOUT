@@ -95,15 +95,7 @@ header {
 
 			li {
 				display: inline-block;
-				margin: 0 3.75rem;
-
-				@include breakpoint(large down) {
-					margin: 0 2.75rem;
-				}
-
-				@include breakpoint(medium down) {
-					margin: 0 2rem;
-				}
+				margin: 0 2rem;
 			}
 		}
 	}
