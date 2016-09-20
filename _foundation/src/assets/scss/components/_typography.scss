@@ -104,13 +104,13 @@ a {
   color: $secondary-color;
   font: {
     family: $body-font-family;
-    weight: 700;
+    weight: 500;
   }
 
   &:hover {
     color: $hover-primary;
   }
-  
+
   &.arrow-link {
     font: {
       size: 1.1em;
