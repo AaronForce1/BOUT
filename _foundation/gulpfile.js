@@ -28,7 +28,12 @@ var COMPATIBILITY = ['last 2 versions', 'ie >= 9'];
 var PATHS = {
   assets: [
     'src/assets/**/*',
-    '!src/assets/{!img,js,scss}/**/*'
+    '!src/assets/{!img,js,scss}/**/*',
+  ],
+  images: [
+    // Images - Piped to images/fancybox
+    "node_modules/fancyapps-fancybox/source/helpers/**/*.{jpg,png,svg,gif,webp,ico}",
+    "node_modules/fancyapps-fancybox/source/*.{jpg,png,svg,gif,webp,ico}"
   ],
   sass: [
     'node_modules/foundation-sites/scss',
@@ -38,8 +43,22 @@ var PATHS = {
     'node_modules/foundation-sites/vendor/jquery/dist/jquery.js',
     'node_modules/what-input/what-input.js',
     'node_modules/foundation-sites/dist/foundation.js',
+    'node_modules/fancyapps-fancybox/lib/jquery.mousewheel.pack.js',
+    'node_modules/fancyapps-fancybox/source/jquery.fancybox.pack.js',
+    'node_modules/fancyapps-fancybox/source/helpers/jquery.fancybox-buttons.js',
+    'node_modules/fancyapps-fancybox/source/helpers/jquery.fancybox-thumbs.js',
+    'node_modules/fancyapps-fancybox/source/helpers/jquery.fancybox-media.js',
+    'node_modules/object-fit-images/dist/ofi.browser.js',
     'src/assets/js/**/*.js',
     'src/assets/js/app.js'
+  ],
+  minified_js: [
+  'node_modules/object-fit-images/dist/ofi.browser.js'
+],
+  fancybox_css: [
+    'node_modules/fancyapps-fancybox/source/jquery.fancybox.css',
+    'node_modules/fancyapps-fancybox/source/helpers/jquery.fancybox-buttons.css',
+    'node_modules/fancyapps-fancybox/source/helpers/jquery.fancybox-thumbs.css'
   ],
   output: {
     css: '../Styles',
@@ -54,10 +73,12 @@ gulp.task('clean', function(done) {
 });
 
 // Copy files out of the assets folder
-// This task skips over the "img", "js", and "scss" folders, which are parsed separately
+// This task skips over the "js" and "scss" folders, which are parsed separately
 gulp.task('copy', function() {
   gulp.src(PATHS.assets)
     .pipe(gulp.dest('./dist/assets'));
+  gulp.src(PATHS.images)
+    .pipe(gulp.dest('./dist/assets/img/fancybox'));
 });
 
 // Copy page templates into finished HTML files
@@ -90,7 +111,7 @@ gulp.task('pages-rebuild', ['refresh'], function(cb) {
       helpers: './src/helpers/'
     }))
     .pipe(gulp.dest('./dist'));
-    cb()
+    cb();
 });
 
 gulp.task('reset', ['pages-rebuild'], function(){
@@ -102,6 +123,17 @@ gulp.task('reset', ['pages-rebuild'], function(){
 
 // WRAP GULP FUNCTIONS TOGETHER IN QUEUE
 gulp.task('pages:reset', ['refresh', 'pages-rebuild', 'reset']);
+
+gulp.task('fancybox-styles', function() {
+  return gulp.src(PATHS.fancybox_css)
+      //.pipe($.plumberNotifier())
+      .pipe($.concat("fancybox.min.css"))
+      .pipe($.autoprefixer("last 5 version"))
+      .pipe($.replace(/url\('?(.*)'?\)/g, "url('../img/fancybox/$1')"))
+      .pipe($.replace("''", "'"))
+      .pipe($.cleanCss({compatibility: 'ie8'}))
+      .pipe(gulp.dest('./dist/assets/css'));
+});
 
 // Compile Sass into CSS
 // In production, the CSS is compressed
@@ -119,38 +151,11 @@ gulp.task('sass', function () {
       browsers: COMPATIBILITY
     }))
     //.pipe(uncss) Causing issues when in production
-    .pipe(minifycss)
+    //.pipe(minifycss)
     .pipe($.if(!isProduction, $.sourcemaps.write()))
-    .pipe(gulp.dest('./dist/assets/css'))
+    .pipe(gulp.dest('./dist/assets/css'));
     //.pipe(gulpif(isPublish, gulp.dest(PATHS.publish.css)));
 });
-
-// gulp.task('sass', function() {
-//   var uncss = $.if(isProduction, $.uncss({
-//     html: ['src/**/*.html'],
-//     ignore: [
-//       new RegExp('^meta\..*'),
-//       new RegExp('^\.is-.*')
-//     ]
-//   }));
-
-//   var minifycss = $.if(isProduction, $.minifyCss());
-
-//   return gulp.src('./src/assets/scss/app.scss')
-//     .pipe(sassGlob())
-//     .pipe($.sourcemaps.init())
-//     .pipe($.sass({
-//       includePaths: PATHS.sass
-//     })
-//       .on('error', $.sass.logError))
-//     .pipe($.autoprefixer({
-//       browsers: COMPATIBILITY
-//     }))
-//     //.pipe(uncss) Causing issues when in production
-//     .pipe(minifycss)
-//     .pipe($.if(!isProduction, $.sourcemaps.write()))
-//     .pipe(gulp.dest('./dist/assets/css'));
-// });
 
 // Combine JavaScript into one file
 // In production, the file is minified
@@ -183,11 +188,11 @@ gulp.task('images', function() {
 
 // Build the "dist" folder by running all of the above tasks
 gulp.task('build', function(done) {
-  sequence('clean', ['pages', 'sass', 'javascript', 'images', 'copy'], done);
+  sequence('clean', ['pages', 'sass', 'fancybox-styles', 'javascript', 'images', 'copy'], done);
 });
 
 gulp.task('development', function(done) {
-  sequence('clean', ['pages', 'sass', 'javascript', 'images', 'copy'], 'watch');
+  sequence('clean', ['pages', 'sass', 'fancybox-styles', 'javascript', 'images', 'copy'], 'watch');
 });
 
 // Build the site, run the server, and watch for file changes
@@ -216,7 +221,7 @@ gulp.task('minify-js', function() {
     .pipe(rename({
       suffix: '.min'
     }))
-    .pipe(gulp.dest(PATHS.output.javascript))
+    .pipe(gulp.dest(PATHS.output.javascript));
 });
 
 gulp.task('minify-css', function() {
