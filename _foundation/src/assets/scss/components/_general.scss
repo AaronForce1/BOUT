@@ -2,16 +2,16 @@
 body {font-family: 'RooneySansLF-Regular';}
 
 section h1 {
-	font-size: 5rem; 
-	font-weight: normal; 
+	font-size: 5rem;
+	font-weight: normal;
 
 	@include breakpoint(small only) {
 		font-size: 3rem;
 	}
 }
-section h2 {
-	font-size: 4.5rem; 
-	font-weight: normal; 
+section h1, h2 {
+	font-size: 4.5rem;
+	font-weight: normal;
 
 	@include breakpoint(small only) {
 		font-size: 2.6rem;
@@ -38,17 +38,17 @@ p {
 
 
 .btn-bout {
-	font-size: 20px; 
+	font-size: 20px;
 	margin-top: 40px;
-	color: $white; 
-	background-color: $primary-color; 
-	height: 50px; 
-	-moz-border-radius: 17px; 
-	-webkit-border-radius: 17px; 
-	border-radius: 25px; 
-	padding: 0 35px; 
-	-moz-box-shadow: 0px 1px 3px rgb(102, 102, 102); 
-	-webkit-box-shadow: 0px 1px 3px rgb(102, 102, 102); 
+	color: $white;
+	background-color: $primary-color;
+	height: 50px;
+	-moz-border-radius: 17px;
+	-webkit-border-radius: 17px;
+	border-radius: 25px;
+	padding: 0 35px;
+	-moz-box-shadow: 0px 1px 3px rgb(102, 102, 102);
+	-webkit-box-shadow: 0px 1px 3px rgb(102, 102, 102);
 	box-shadow: 0px 1px 3px rgb(102, 102, 102);
 }
 
@@ -59,7 +59,7 @@ p {
 	}
 }
 .iPhone {
-	min-height: 564px; 
+	min-height: 564px;
 	width: 275px;
 
 	&.right {
@@ -72,14 +72,14 @@ p {
 
 .lt-primary-bg-color {
 	.iPhone {
-		background: url(../img/iphone_wireframe-white.png) no-repeat; 
+		background: url(../img/iphone_wireframe-white.png) no-repeat;
 		background-size: contain;
 	}
 }
 
 .lt-white-bg-color {
 	.iPhone {
-		background: url(../img/iphone_wireframe-blue.png) no-repeat; 
+		background: url(../img/iphone_wireframe-blue.png) no-repeat;
 		background-size: contain;
 	}
 }
