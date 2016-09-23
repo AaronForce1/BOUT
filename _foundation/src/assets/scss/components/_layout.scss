@@ -41,7 +41,7 @@ footer {
 
 .container {
   @include breakpoint(small only) {
-    margin-top: -50px;
+    //margin-top: -50px;
   }
 }
 

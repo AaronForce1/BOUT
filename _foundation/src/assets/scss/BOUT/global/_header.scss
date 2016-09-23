@@ -1,6 +1,6 @@
 header {
-	-moz-border-radius: 0 0 50px 50px;
-	-webkit-border-radius: 0 0 50px 50px;
+	-moz-border-radius: 0 0 32px 32px;
+	-webkit-border-radius: 0 0 32px 32px;
 	border-radius: 0 0 32px 32px;
 	box-shadow: 0 4px 0 $shadow-black;
 	position: fixed;
@@ -8,10 +8,23 @@ header {
 	left: 0;
 	right: 0;
 	z-index: 999;
+
+	@include breakpoint(small only) {
+		top: initial;
+		bottom: 0;
+		-moz-border-radius: 32px 32px 0 0;
+		-webkit-border-radius: 32px 32px 0 0;
+		border-radius: 32px 32px 0 0;
+		box-shadow: 0 4px 0 $shadow-black;
+	}
 }
 	.header.row {
 		height: 84px;
 		position: relative;
+
+		@include breakpoint(small only) {
+			height: 72px;
+		}
 	}
 
 	.header.row>div {
@@ -58,6 +71,11 @@ header {
 		&-container {
 			width: 20px;
 
+			@include breakpoint(small only) {
+				float: left;
+				margin: 0;
+				margin-left: 14px;
+			}
 		}
 	}
 
@@ -67,23 +85,48 @@ header {
 		top: 50%;
 		margin-top: -11.25px;
 
+		@include breakpoint(small only) {
+			margin-top: -5px;
+		}
+
 		.nav {
 			&-column {
 				@include flex-grid-column(null, 0);
 
 				&-logo {
 					@include flex-grid-column(shrink, 0);
+
+					@include breakpoint(small only) {
+						float: left;
+						order: 1;
+						@include flex-grid-column(null, 0);
+					}
 				}
 			}
 
 			&-left {
+				@include breakpoint(small only) {
+					order: 2;
+					@include flex-grid-column(shrink, 0);
+				}
 				li {
 					float: right;
 				}
 			}
 			&-right {
+				@include breakpoint(small only) {
+					order: 3;
+					@include flex-grid-column(shrink, 0);
+				}
 				li {
 					float: left;
+					@include breakpoint(small only) {
+						float: right;
+
+						&:last-child {
+							margin-right: 14px;
+						}
+					}
 				}
 			}
 		}
@@ -96,6 +139,10 @@ header {
 			li {
 				display: inline-block;
 				margin: 0 2rem;
+
+				@include breakpoint(small only) {
+					margin: 0 1rem;
+				}
 			}
 		}
 	}
