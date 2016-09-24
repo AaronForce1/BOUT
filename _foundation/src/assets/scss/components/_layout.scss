@@ -29,6 +29,7 @@ footer {
   @include breakpoint(small only) {
     margin: 0;
     padding: 0;
+    padding-bottom: 50px;
   }
 }
 
@@ -84,7 +85,10 @@ $module: '.lt';
     a {
       color: $primary-color;
 
-      &:hover {color: $secondary-color;}
+      &:hover {
+        color: $hover-primary;
+        text-decoration: underline;
+      }
     }
   }
 
