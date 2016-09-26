@@ -4,6 +4,10 @@ body {height: 100%;}
 section {
   margin: 3.125rem 0;
 
+  @include breakpoint(small only) {
+    margin-top: 0;
+  }
+
   &>.title {
     &-tertiary {
       margin-top: 1rem;
@@ -61,7 +65,7 @@ $module: '.lt';
     a {
       color: white;
 
-      &:hover {color: $secondary-color;}
+      &:hover {}
     }
 
     // & + .lt-primary-bg-color {
@@ -84,11 +88,6 @@ $module: '.lt';
 
     a {
       color: $primary-color;
-
-      &:hover {
-        color: $hover-primary;
-        text-decoration: underline;
-      }
     }
   }
 

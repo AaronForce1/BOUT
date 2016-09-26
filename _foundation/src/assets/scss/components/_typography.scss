@@ -106,9 +106,10 @@ a {
     family: $body-font-family;
     weight: 500;
   }
+  text-decoration: underline;
 
   &:hover {
-    color: $hover-primary;
+    text-decoration: underline;
   }
 
   &.arrow-link {

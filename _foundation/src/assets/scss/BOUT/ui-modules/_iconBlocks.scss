@@ -25,12 +25,35 @@
 		}
 	}
 
-	&.columns {
+	&-row {
+		@include breakpoint(medium only) {
+			max-width: 40rem;
+			margin-bottom: -3rem;
+		}
+		@include breakpoint(iphone down) {
+			max-width: none;
+		}
+	}
+
+	&.columns, &.column {
 		.featured-img {
 			img, svg {
 				height: 72px;
 				width: 72px;
 			}
+		}
+
+		h4 {
+			max-width: 200px;
+			margin: 0 auto;
+		}
+
+		@include breakpoint(medium down) {
+			@include flex-grid-column(4);
+			margin-bottom: 3rem;
+		}
+		@include breakpoint(small only) {
+			@include flex-grid-column(6);
 		}
 	}
 }
