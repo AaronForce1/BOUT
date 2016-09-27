@@ -38,7 +38,13 @@ header {
 			height: 84px;
 
 			@include breakpoint(small only) {
-				display: none;
+				position: fixed;
+		    bottom: 0;
+		    left: 0;
+		    right: 0;
+		    height: 138px;
+		    background: $primary-color;
+		    z-index: -1;
 			}
 		}
 	}

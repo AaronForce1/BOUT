@@ -29,7 +29,7 @@ p {
 			margin-bottom: 0 !important;
 
 			&.lt-primary-bg-color {
-				border-bottom: 1px solid $shadow-black;
+				border-bottom: none;
 			}
 		}
 	}
@@ -39,22 +39,22 @@ p {
 .btn-bout {
 	font-size: 20px;
 	margin-top: 40px;
-	color: $white;
+	color: #FAFAFA;
 	background-color: $primary-color;
 	height: 50px;
 	-moz-border-radius: 17px;
 	-webkit-border-radius: 17px;
-	border-radius: 25px;
+	border-radius: 100px;
 	padding: 0 35px;
-	-moz-box-shadow: 0px 1px 3px rgb(102, 102, 102);
-	-webkit-box-shadow: 0px 1px 3px rgb(102, 102, 102);
-	box-shadow: 0px 1px 3px rgb(102, 102, 102);
+	-moz-box-shadow: 0px 2px 0px 0px #09538D;
+	-webkit-box-shadow: 0px 2px 0px 0px #09538D;
+	box-shadow: 0px 2px 0px 0px #09538D;
 }
 
 .lt-primary-bg-color {
 	.btn-bout {
 		color: $primary-color;
-		background-color: $white;
+		background-color: #FAFAFA;
 	}
 }
 .iPhone {

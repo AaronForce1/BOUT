@@ -4,8 +4,14 @@ section#landing h2 {margin: 50px 0;}
 	margin: 40px auto 0;
 
 	@include breakpoint(iphone down) {
-		padding-top: 7.75rem !important;
-		padding-bottom: 10.775rem !important;
+		padding-top: 4rem !important;
+		padding-bottom: 4rem !important;
+	}
+
+	&>.row {
+		@include breakpoint(iphone down) {
+			@include flex-grid-row-align(center, null);
+		}
 	}
 
 	.column.column-video {
@@ -16,10 +22,13 @@ section#landing h2 {margin: 50px 0;}
 			padding-right: 1.5rem;
 		}
 
-		@include breakpoint(small only) {
-			@include flex-grid-column(100%, 0px);
-			padding-left: 0;
-			padding-right: 0;
+		@include breakpoint(iphone down) {
+			@include flex-grid-column(12, 140px);
+			margin-bottom: 3rem;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
 		}
 
 		&:first-child {
@@ -67,6 +76,34 @@ section#landing h2 {margin: 50px 0;}
 			.featured-img {
 				margin: 0;
 				padding: 2px;
+			}
+		}
+	}
+}
+
+#landing {
+	.feature-set {
+		.logo {
+			@include breakpoint(iphone down) {
+				order: 1;
+			}
+		}
+
+		.subtitle {
+			@include breakpoint(iphone down) {
+				order: 2;
+			}
+		}
+
+		.phone-gap {
+			@include breakpoint(iphone down) {
+				order: 3;
+			}
+		}
+
+		.content-blurb {
+			@include breakpoint(iphone down) {
+				order: 4;
 			}
 		}
 	}
