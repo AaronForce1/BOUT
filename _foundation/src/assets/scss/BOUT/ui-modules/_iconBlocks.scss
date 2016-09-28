@@ -36,6 +36,9 @@
 	}
 
 	&.columns, &.column {
+		padding-left: 1rem !important;
+		padding-right: 1rem !important;
+
 		.featured-img {
 			img, svg {
 				height: 72px;
@@ -44,7 +47,7 @@
 		}
 
 		h4 {
-			max-width: 200px;
+			width: 174px;
 			margin: 0 auto;
 		}
 

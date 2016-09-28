@@ -39,27 +39,38 @@ p {
 .btn-bout {
 	font-size: 20px;
 	margin-top: 40px;
-	color: #FAFAFA;
+	color: $white;
 	background-color: $primary-color;
 	height: 50px;
 	-moz-border-radius: 17px;
 	-webkit-border-radius: 17px;
 	border-radius: 100px;
 	padding: 0 35px;
-	-moz-box-shadow: 0px 2px 0px 0px #09538D;
-	-webkit-box-shadow: 0px 2px 0px 0px #09538D;
-	box-shadow: 0px 2px 0px 0px #09538D;
+	-moz-box-shadow: 0px 2px 0px 0px $shadow-black;
+	-webkit-box-shadow: 0px 2px 0px 0px $shadow-black;
+	box-shadow: 0px 2px 0px 0px $shadow-black;
+
+	&:hover {
+		color: $hover-primary;
+	}
 }
 
 .lt-primary-bg-color {
 	.btn-bout {
 		color: $primary-color;
 		background-color: #FAFAFA;
+		-moz-box-shadow: 0px 2px 0px 0px $shadow-white;
+		-webkit-box-shadow: 0px 2px 0px 0px $shadow-white;
+		box-shadow: 0px 2px 0px 0px $shadow-white;
+
+		&:hover {
+			color: $hover-primary;
+		}
 	}
 }
 .iPhone {
-	min-height: 564px;
-	width: 275px;
+	height: 570px;
+  width: 288px;
 
 	&.right {
 		float: right;
@@ -67,18 +78,27 @@ p {
 	&.left {
 		float: left;
 	}
+
+	position: absolute;
+	top: 69px;
+	left: 24px;
+	right: 24px;
+	bottom: 77px;
+	border-radius: 1px;
+	overflow: hidden;
+	margin: 0;
 }
 
 .lt-primary-bg-color {
 	.iPhone {
-		background: url(../img/iphone_wireframe-white.png) no-repeat;
+		background: url(../img/iPhone.png) no-repeat;
 		background-size: contain;
 	}
 }
 
 .lt-white-bg-color {
 	.iPhone {
-		background: url(../img/iphone_wireframe-blue.png) no-repeat;
+		background: url(../img/iPhone.svg) no-repeat;
 		background-size: contain;
 	}
 }

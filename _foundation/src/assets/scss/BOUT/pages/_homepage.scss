@@ -48,7 +48,7 @@ section#landing h2 {margin: 50px 0;}
 			clear: both;
 			width: 320px;
 
-			@include breakpoint(medium down) {
+			@include breakpoint(iphone down) {
 				width: 100%;
 			}
 		}
@@ -60,12 +60,8 @@ section#landing h2 {margin: 50px 0;}
 		display: block;
 		margin: 0 auto 10px;
 
-		@include breakpoint(medium down) {
-			width: 100%;
-		}
-
 		@include breakpoint(iphone down) {
-			height: 215px;
+			float: none !important;
 		}
 	}
 

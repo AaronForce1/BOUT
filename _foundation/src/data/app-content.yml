@@ -12,23 +12,23 @@ members:
     img: "app/people.svg"
   -
     title: ""
-    description: "Add one album with three photos or GIFs"
+    description: "Add 1 album with 3 photos or GIFs"
     svg: "icon-mediaFrame"
     img: "app/mediaFrame.svg"
   -
     title: ""
-    description: "Filter people with one Metatag"
+    description: "Filter people with 1 Metatag"
     svg: "icon-filter"
     img: "app/filter.svg"
   -
     title: ""
-    description: "Read Contributor and Member Disucssions"
+    description: "Read all Discussion articles"
     svg: "icon-discussion-item"
     img: "app/discussion-item.svg"
 premium:
   -
     title: ""
-    description: "Add unlimited photos, albums, and GIFs"
+    description: "Add unlimited photos and albums"
     svg: "icon-mediaMultiples"
     img: "app/mediaMultiples.svg"
   -
@@ -38,7 +38,7 @@ premium:
     img: "app/peopleMultiple.svg"
   -
     title: ""
-    description: "Create your own Disucssions"
+    description: "Create your own Discussions"
     svg: "icon-discussion-add"
     img: "app/discussion-add.svg"
   -
@@ -48,7 +48,7 @@ premium:
     img: "app/filter.svg"
   -
     title: ""
-    description: "Comment on a discussion thread"
+    description: "Comment on a Discussions article"
     svg: "icon-comment"
     img: "app/comment.svg"
 profile:
@@ -119,4 +119,3 @@ ergonomics:
     title: ""
     description: "Pull up on the menu bar to reveal the TouchPad remote, which allows you to easily navigate."
     img: "app/export.svg"
-

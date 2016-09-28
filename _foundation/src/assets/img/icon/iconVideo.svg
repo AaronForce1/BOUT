@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.1 (33804) - http://www.bohemiancoding.com/sketch -->
+    <title>iconVideoFilledDefault</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Mockups" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="discussions/article" transform="translate(-142.000000, -472.000000)">
+            <g id="subcard" transform="translate(0.000000, 215.000000)">
+                <g id="iconVideoFilledDefault" transform="translate(142.000000, 257.000000)">
+                    <path d="M18,36 C8.0588745,36 0,27.9411255 0,18 C0,8.0588745 8.0588745,0 18,0 C27.9411255,0 36,8.0588745 36,18 C36,27.9411255 27.9411255,36 18,36 Z" id="Shape" fill="#1A73B8"></path>
+                    <path d="M14.2697198,7.73820204 C13.8455559,7.3846835 13.201272,7.68610242 13.201272,8.23805994 L13.201272,27.8569418 C13.201272,28.4088993 13.8455559,28.7103182 14.2697198,28.3567997 L26.039431,18.5473588 C26.3516376,18.2871508 26.3516376,17.8078509 26.039431,17.547643 L14.2697198,7.73820204 L14.2697198,7.73820204 Z" id="Path" fill="#FAFAFA"></path>
+                    <polygon id="Path" fill="#1A73B8" points="14.5036264 26.4618232 14.5006293 9.62570851 24.6084392 18.0500413"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

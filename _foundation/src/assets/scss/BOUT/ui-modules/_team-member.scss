@@ -3,10 +3,17 @@
     .name {
       h4 {
         margin: 10px auto 4px;
+        font-weight: 600;
 
         @include breakpoint(iphone down) {
             margin-bottom: 1rem;
         }
+      }
+    }
+    .bio {
+      p {
+        width: 264px;
+        margin: 0 auto;
       }
     }
   }

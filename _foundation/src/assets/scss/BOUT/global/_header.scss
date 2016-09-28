@@ -121,17 +121,15 @@ header {
 					order: 2;
 					@include flex-grid-column(shrink, 0);
 				}
-				li {
-					float: right;
-				}
+				text-align: right;
 			}
 			&-right {
 				@include breakpoint(small only) {
 					order: 3;
 					@include flex-grid-column(shrink, 0);
 				}
+				text-align: left;
 				li {
-					float: left;
 					@include breakpoint(small only) {
 						float: right;
 
