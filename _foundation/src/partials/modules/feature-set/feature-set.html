@@ -1,0 +1,20 @@
+<div id="{{title}}" class="{{#even-odd @index}}lt-primary-bg-color img-order-left{{else}}lt-white-bg-color img-order-right{{/even-odd}} lt-section-padding-large">
+  <div class="row feature-set align-center">
+    <h2 class="columns lt-margin-lower hide-for-medium text-center">{{title}}</h2>
+    <div class="content-blurb align-self-middle">
+      <h2 class="lt-margin-lower show-for-medium">{{title}}</h2>
+      <div class="content type-body-copy">
+        {{#each itemList}}
+          {{> icon-blocks render='row'}}
+        {{/each}}
+      </div>
+    </div>
+    <div class="phone-gap">
+      <div class="iPhone">
+        <div class="featured-img" data-imagizer>
+          <img src="{{icon}}" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

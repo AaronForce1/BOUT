@@ -69,8 +69,8 @@ p {
 	}
 }
 .iPhone {
-	height: 570px;
-  width: 288px;
+	height: 552px;
+	width: 280px;
 
 	&.right {
 		float: right;
@@ -79,19 +79,21 @@ p {
 		float: left;
 	}
 
-	position: absolute;
-	top: 69px;
-	left: 24px;
-	right: 24px;
-	bottom: 77px;
-	border-radius: 1px;
-	overflow: hidden;
-	margin: 0;
+	.featured-img {
+		position: absolute;
+		top: 67px;
+		left: 23px;
+		right: 23px;
+		bottom: 73px;
+		border-radius: 2px 2px 2px 2px;
+		overflow: hidden;
+		margin: 0;
+	}
 }
 
 .lt-primary-bg-color {
 	.iPhone {
-		background: url(../img/iPhone.png) no-repeat;
+		background: url(../img/iPhone.svg) no-repeat;
 		background-size: contain;
 	}
 }

@@ -51,6 +51,14 @@
 			margin: 0 auto;
 		}
 
+		@include breakpoint(large up) {
+			&:first-child, &:last-child {
+				padding-left: 0 !important;
+				padding-right: 0 !important;
+			}
+		}
+
+
 		@include breakpoint(medium down) {
 			@include flex-grid-column(4);
 			margin-bottom: 3rem;
