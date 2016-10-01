@@ -37,7 +37,7 @@
 		@include breakpoint(iphone down)
 		{
 			@include flex-grid-column(12);
-			order: 1;
+			order: 1 !important;
 
 			.iPhone {
 				float: none !important;
@@ -51,7 +51,7 @@
 
 		@include breakpoint(iphone down) {
 			@include flex-grid-column(12);
-			order: 2;
+			order: 2 !important;
 
 			padding-left: 1.25rem;
 			padding-right: 1.25rem;

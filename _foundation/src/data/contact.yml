@@ -1,0 +1,50 @@
+-
+  title: "General Inquiries"
+  description:
+  contact:
+      email: "info@bout.lgbt"
+      email-subject: "A New General Inquiry"
+      phone:
+  cta:
+      title:
+      link:
+-
+  title: "Press"
+  description:
+  contact:
+      email: "brandon@fifteenminutes.com"
+      email-subject: "A New Press Inquiry for B•OUT"
+      phone: "323-556-9700"
+  cta:
+      title: "Press Kit"
+      link: "http://dev.bout.lgbt/assets/resources/B • OUT Press Kit.zip"
+-
+  title: "Contributors"
+  description: "We are always on the lookout for contributors. If you have an interest in producing either written or video content for B • OUT we’d love to talk with you. Send Maxwell Coviello a link to your work, along with a resume and a cover note with topics and ideas."
+  contact:
+      email: "maxwell@bout.lgbt"
+      email-subject: "Request to Contribute for B•OUT"
+      phone:
+  cta:
+      title: "Voice and Tone"
+      link: ""
+-
+  title: "Advertisers"
+  description: "Brand allies looking to partner with B • OUT can contact Mark Willett"
+  contact:
+      email: "mark@bout.lgbt"
+      email-subject: "Request to Advertise on B•OUT"
+      phone:
+  cta:
+      title: "Advertiser Deck"
+      link: "http://dev.bout.lgbt/assets/resources/B • OUT Advertising Deck.pdf"
+-
+  title: "Investors"
+  description: "Contact Mark Willettt"
+  contact:
+      email: "mark@bout.lgbt"
+      email-subject: "Request to Invest in B•OUT"
+      phone:
+  cta:
+      title: "Investor Deck"
+      link: "http://deck.bout.lgbt"

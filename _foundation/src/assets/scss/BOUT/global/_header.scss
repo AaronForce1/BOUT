@@ -12,10 +12,8 @@ header {
 	@include breakpoint(small only) {
 		top: initial;
 		bottom: 0;
-		-moz-border-radius: 32px 32px 0 0;
-		-webkit-border-radius: 32px 32px 0 0;
-		border-radius: 32px 32px 0 0;
-		box-shadow: 0px 0px 4px 2px $shadow-black;
+		box-shadow: 0px -4px 0px 0px $shadow-black;
+		border-radius: 0;
 	}
 }
 	.header.row {

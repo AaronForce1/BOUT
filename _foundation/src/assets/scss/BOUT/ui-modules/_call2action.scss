@@ -1,0 +1,36 @@
+.cta-desc {
+  width: 800px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+
+  @include breakpoint(medium only) {
+    width: 720px;
+  }
+
+  @include breakpoint(iphone only) {
+    width: 540px;
+  }
+
+  @include breakpoint(small only) {
+    width: 500px;
+  }
+
+  @include breakpoint(500px down) {
+    width: auto;
+  }
+}
+
+.contact-info {
+  a {
+    display: block;
+    margin-bottom: 6px;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  margin-bottom: 1rem;
+}

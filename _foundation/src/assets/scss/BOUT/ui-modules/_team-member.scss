@@ -14,6 +14,10 @@
       p {
         width: 264px;
         margin: 0 auto;
+
+        @include breakpoint(iphone down) {
+          width: auto;
+        }
       }
     }
   }
