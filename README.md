@@ -80,3 +80,38 @@ server. The /src folder has 6 primary sub-directories:
 | resources     |          | UI/Design resources. *To be removed...*                                                                                                                                                                                           |
 
  
+
+### SASS File Implementation Overview
+
+The SCSS files located in /src/assets are the core design components for both
+Foundation framework and the B • OUT Website design.
+
+The SCSS **Root Directory** contains the following configuration files:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+app.scss
+    // Imports mixins, settings.scss, font configurations, foundation, and custom SCSS components
+
+settings.scss
+    // Required by Foundation Framework. Declares variables used throughout Foundation's SCSS style sheets. Some are preconfigured with new customs for B•OUT, however most are untouched.
+
+mixins.scss
+    // New SASS scripting methods for easier CSS compilation
+
+fonts.scss
+    // Pretty self-explanatory...
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The SCSS **Components Directory** contains mostly files attributed to overall
+layout and design paradigms. The most important files to review include:
+*\_typography.scss*, *\_layout.scss*, and *\_general.scss*.
+
+The SCSS **BOUT Directory** includes styles specifically set up for B • OUT.
+There are *ui-modules* which match their corresponding HTML partials; *pages*
+which are custom styles set up for specific page layouts (mostly just the
+homepage); and *global* which are styles for header, footers, and other global
+components used throughout the site.
+
+### JS File Implementation Overview
+
+ 
