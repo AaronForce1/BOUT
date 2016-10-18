@@ -19,7 +19,7 @@ var isProduction = !!(argv.production);
 var minifycss = $.if(isProduction, cssnano());
 
 // Port to use for the development server.
-var PORT = 9000;
+var PORT = 3000;
 
 // Browsers to target when prefixing CSS.
 var COMPATIBILITY = ['last 2 versions', 'ie >= 9'];
@@ -151,9 +151,10 @@ gulp.task('sass', function () {
       browsers: COMPATIBILITY
     }))
     //.pipe(uncss) Causing issues when in production
-    //.pipe(minifycss)
+    .pipe(minifycss)
     .pipe($.if(!isProduction, $.sourcemaps.write()))
-    .pipe(gulp.dest('./dist/assets/css'));
+    .pipe(gulp.dest('./dist/assets/css'))
+    .pipe(browser.stream());
     //.pipe(gulpif(isPublish, gulp.dest(PATHS.publish.css)));
 });
 
@@ -171,7 +172,8 @@ gulp.task('javascript', function() {
     //.pipe(modernizr())
     .pipe(uglify)
     .pipe($.if(!isProduction, $.sourcemaps.write()))
-    .pipe(gulp.dest('./dist/assets/js'));
+    .pipe(gulp.dest('./dist/assets/js'))
+    .pipe(browser.stream());
 });
 
 // Copy images to the "dist" folder
@@ -192,18 +194,18 @@ gulp.task('build', function(done) {
 });
 
 gulp.task('development', function(done) {
-  sequence('clean', ['pages', 'sass', 'fancybox-styles', 'javascript', 'images', 'copy'], 'watch');
+  sequence(['build', 'server'], 'watch');
 });
 
 // Build the site, run the server, and watch for file changes
 gulp.task('watch', function() {
-  gulp.watch(['./src/pages/**/*.html'], ['pages']);
-  gulp.watch(['./src/{layouts,partials}/**/*.html'], ['pages:reset']);
+  gulp.watch(['./src/{layouts,pages,partials}/**/*.html'], ['pages:reset']);
+  gulp.watch(['./src/assets/scss/**/*.scss'], ['sass', browser.reload]);
+  gulp.watch(['./src/partials/**/*.scss'], ['sass', browser.reload]);
+  gulp.watch(['./src/assets/js/**/*.js'], ['javascript', browser.reload]);
   gulp.watch(['./src/data/**/*.yml'], ['pages:reset']);
-  gulp.watch(['./src/assets/scss/**/*.scss'], ['sass']);
-  gulp.watch(['./src/partials/**/*.scss'], ['sass']);
-  gulp.watch(['./src/assets/js/**/*.js'], ['javascript']);
-  gulp.watch(['./src/assets/img/*'], ['copy']);
+  gulp.watch(['./src/assets/scss/**/*.scss'], ['sass', browser.reload]);
+  gulp.watch(['./src/assets/img/*'], ['copy', browser.reload]);
 });
 
 
