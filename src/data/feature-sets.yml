@@ -37,7 +37,7 @@ app:
   -
     title: "Messages"
     description: ""
-    icon: ""
+    icon: "/assets/img/app-covers/messages.png"
     itemList:
       -
         title: ""
@@ -52,7 +52,7 @@ app:
   -
     title: "People"
     description: ""
-    icon: ""
+    icon: "/assets/img/app-covers/people.png"
     itemList:
       -
         title: ""

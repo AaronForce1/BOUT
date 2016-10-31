@@ -5,6 +5,11 @@
 
 .iconBlocks {
 	&.row {
+		width: 640px;
+		@include breakpoint (medium only) {
+			width: 400px;	
+		}
+
 		&>.columns, &>.column {
 			&:first-child {
 				padding-right: .5rem !important;

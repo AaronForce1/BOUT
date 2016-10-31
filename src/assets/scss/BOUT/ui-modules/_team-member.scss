@@ -23,6 +23,13 @@
   }
 
   &-details {
+    .wrapper {
+      @include flex-grid-row ();
+      width: 750px;
+
+      @include breakpoint (medium down);
+      width: 600px;
+    }
     .avatar {
       @include breakpoint(medium up) {
         padding-right: .5rem !important;
