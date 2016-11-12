@@ -1,13 +1,19 @@
-.featured-img {
+.featured-img { /* Controls spacing of icons and descriptive text in Members and Premium sections */ 
 	margin-bottom: 1rem;
 }
 
 
-.iconBlocks {
+.iconBlocks { /* Container for icons and text next to iPhones */
 	&.row {
-		width: 640px;
-		@include breakpoint (medium only) {
-			width: 400px;	
+		width: 550px;
+		@include breakpoint(medium only) {
+			width: 430px;
+		}
+		@include breakpoint(iphone only) {
+			width: 600px;
+		}
+		@include breakpoint(small only) {
+			width: 500px;
 		}
 
 		&>.columns, &>.column {
@@ -74,15 +80,15 @@
 	}
 }
 
-.lt-primary-bg-color {
+.lt-primary-bg-color { /* Controls color of icons on blue background */
 	.featured-img {
 		svg {
-			fill: #FAFAFA;
+			fill: #fafafa;
 		}
 	}
 }
 
-.lt-white-bg-color {
+.lt-white-bg-color { /* Controls color of icons on white background */
 	.featured-img {
 		svg {
 			fill: #1B75BC;

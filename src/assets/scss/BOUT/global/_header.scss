@@ -106,7 +106,7 @@ header {
 				&-logo {
 					@include flex-grid-column(shrink, 0);
 
-					@include breakpoint(small only) {
+					@include breakpoint(iphone down) {
 						float: left;
 						order: 1;
 						@include flex-grid-column(null, 0);
@@ -128,8 +128,8 @@ header {
 				}
 				text-align: left;
 				li {
-					@include breakpoint(small only) {
-						float: right;
+					@include breakpoint(iphone down) {
+						float: none;
 
 						&:last-child {
 							margin-right: 14px;

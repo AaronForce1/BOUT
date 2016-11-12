@@ -18,8 +18,8 @@ members:
   -
     title: ""
     description: "Filter people with 1 Metatag"
-    svg: "icon-filter"
-    img: "app/filter.svg"
+    svg: "icon-metatag"
+    img: "app/metatag.svg"
   -
     title: ""
     description: "Read all Discussion articles"

@@ -1,6 +1,6 @@
 -
   title: "General Inquiries"
-  description:
+  description: "Have questions about B • OUT? Have a suggestion? Email us at"
   contact:
       email: "info@bout.lgbt"
       email-subject: "A New General Inquiry"
@@ -27,7 +27,7 @@
       phone:
   cta:
       title: "Voice and Tone"
-      link: ""
+      link: "http://dev.bout.lgbt/assets/resources/B • OUT Voice and Tone"
 -
   title: "Advertisers"
   description: "Brand allies looking to partner with B • OUT can contact Mark Willett"

@@ -81,7 +81,24 @@ section#landing h2 {margin: 50px 0;}
 	}
 }
 
-#landing {
+.container-full { /* Defines layout for paragraph items such as Mission descriptive text and About descriptive text */
+	@include flex-grid-row();
+	width: 860px;
+
+	@include breakpoint(medium only) {
+		width: 720px;
+	}
+
+	@include breakpoint(iphone only) {
+		width: 550px;
+	}
+
+	@include breakpoint(small down) {
+		width: 420px;
+	}
+}
+
+#homepage {
 	.feature-set {
 		.logo {
 			@include breakpoint(iphone down) {
@@ -97,13 +114,13 @@ section#landing h2 {margin: 50px 0;}
 
 		.phone-gap {
 			@include breakpoint(iphone down) {
-				order: 3 !important;
+				order: 4 !important;
 			}
 		}
 
 		.content-blurb {
 			@include breakpoint(iphone down) {
-				order: 4 !important;
+				order: 3 !important;
 			}
 		}
 	}
