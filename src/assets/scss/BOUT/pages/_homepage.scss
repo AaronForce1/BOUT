@@ -98,7 +98,7 @@ section#landing h2 {margin: 50px 0;}
 	}
 }
 
-#homepage {
+#landing {
 	.feature-set {
 		.logo {
 			@include breakpoint(iphone down) {
@@ -121,6 +121,9 @@ section#landing h2 {margin: 50px 0;}
 		.content-blurb {
 			@include breakpoint(iphone down) {
 				order: 3 !important;
+			}
+			.logo-subtitle {
+				font-size: 1.5rem;
 			}
 		}
 	}
