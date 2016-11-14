@@ -22,7 +22,7 @@ section {
   }
   &.lt-primary-bg-color {
     &:last-of-type {
-      // border-radius: 2rem 2rem 0 0; 
+      // border-radius: 2rem 2rem 0 0;
       &.lt-section-padding-medium {
         padding-bottom: 6.25rem;
 
@@ -173,11 +173,6 @@ $module: '.lt';
       padding-top: 3.125rem;
       padding-bottom: 3.125rem;
 
-      &.lt-primary-bg-color {
-        padding-top: 6.25rem;
-        padding-bottom: 6.25rem;
-      }
-
       &>h1 {margin-bottom: 4rem;}
 
       @include breakpoint(small only) {
@@ -292,6 +287,10 @@ $module: '.lt';
       &-small {
         margin-bottom: 1.25rem !important;
       }
+    }
+
+    &-margin-collapse {
+      margin: 0;
     }
 
     &-pull-up {
