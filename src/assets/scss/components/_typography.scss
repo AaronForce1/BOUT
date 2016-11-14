@@ -41,7 +41,6 @@ $module: '.type';
       font: {
         weight: 500;
       }
-
       @include breakpoint(small only) {
         font-size: 1.4rem;
       }
@@ -52,7 +51,6 @@ $module: '.type';
       font: {
         weight: 500;
       }
-
       @include breakpoint(small only) {
         font-size: 1.2rem;
       }

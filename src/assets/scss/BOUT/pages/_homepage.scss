@@ -83,14 +83,14 @@ section#landing h2 {margin: 50px 0;}
 
 .container-full { /* Defines layout for paragraph items such as Mission descriptive text and About descriptive text */
 	@include flex-grid-row();
-	width: 860px;
+	width: 820px;
 
 	@include breakpoint(medium only) {
-		width: 720px;
+		width: 700px;
 	}
 
 	@include breakpoint(iphone only) {
-		width: 550px;
+		width: 540px;
 	}
 
 	@include breakpoint(small down) {

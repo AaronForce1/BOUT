@@ -24,31 +24,32 @@
 
   &-details {
     .wrapper {
-      @include flex-grid-row ();
-      width: 1024px;
+      @include flex-grid-row()
+      width: 820px;
 
       @include breakpoint(medium only) {
-        width: 768px;
+        width: 640px;
       }
 
       @include breakpoint(iphone only) {
-        width: 600px;
+        width: 560px;
       }
 
       @include breakpoint(small down) {
-        width: 480px;
+        width: 420px;
       }
     }
     .avatar {
       @include breakpoint(medium up) {
-        padding-right: .5rem !important;
+        padding-right: 1rem !important;
       }
       &-content {
         @include breakpoint(medium up) {
-          padding-left: .5rem !important;
+          padding-left: 1rem !important;
         }
       }
     }
+    
     .name {
       h4 {
         margin: 0 auto;

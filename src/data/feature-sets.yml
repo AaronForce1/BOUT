@@ -57,10 +57,12 @@ app:
       -
         title: ""
         description: "Discover and meet new friends, network with LGBTQ professionals, or find someone to date. Easily let others know if you’re looking for casual intimacy -- or not -- with the Looking toggle. Premium subscribers can see unlimited people."
+        svg: "icon-peopleConfirmed"
         img: "app/peopleConfirmed.svg"
       -
         title: ""
         description: "Filter members by gender, age, or fine-tune your search with metatags to find exactly who and what you're looking for. Premium subscribers can filter people with unlimited metatags. Traveling? Instantly let other members know with our Travel toggle."
+        svg: "icon-filter"
         img: "app/filter.svg"
   -
     title: "Navigation"
@@ -70,10 +72,12 @@ app:
       -
         title: ""
         description: "We have reimagined app navigation to make finding what you need as easy as possible. See previews of each section on the homescreen to get an overview of what’s going on. And no more wasting time endlessly scrolling to see what you want."
+        svg: "icon-tap"
         img: "app/tap-icon.svg"
       -
         title: ""
         description: "With so much to do on B • OUT, you need an easy way to get to the homescreen. Simply hold down anywhere on the screen you’re on to get back."
+        svg: "icon-home"
         img: "app/home.svg"
   -
     title: "Ergonomics"
@@ -83,8 +87,10 @@ app:
       -
         title: ""
         description: "B • OUT is designed from the bottom up for today's screen sizes. Use B • OUT entirely one-handed while on the go with our side capsules that change position based on your hand dominance."
+        svg: "icon-phone"
         img: "app/phoneIcon.svg"
       -
         title: ""
         description: "Pull up on the menu bar to reveal the TouchPad remote, which allows you to easily navigate."
+        svg: "icon-touchpad"
         img: "app/export.svg"

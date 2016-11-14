@@ -20,7 +20,7 @@
 				order: 2;
 
 				.iPhone {
-					float: left;
+					float: right;
 				}
 			}
 			.content-blurb {
@@ -55,8 +55,6 @@
 
 			padding-left: 1.25rem;
 			padding-right: 1.25rem;
-
-		@include flex-grid-row();
 		}
 	}
 }
