@@ -1,4 +1,4 @@
-.featured-img { /* Controls spacing of icons and descriptive text in Members and Premium sections */ 
+.featured-img { /* Controls spacing of icons and descriptive text in Members and Premium sections */
 	margin-bottom: 1rem;
 }
 
@@ -14,6 +14,9 @@
 		}
 		@include breakpoint(small only) {
 			width: 500px;
+		}
+		@include breakpoint(iphone down) {
+			margin: 0 auto;
 		}
 
 		&>.columns, &>.column {
