@@ -96,6 +96,10 @@ section#landing h2 {margin: 50px 0;}
 	@include breakpoint(small down) {
 		width: 420px;
 	}
+
+	@include breakpoint(420px down) {
+		width: auto;
+	}
 }
 
 #landing {
