@@ -58,9 +58,10 @@ header {
 
 		font-family: $body-font-family;
 
-		@include breakpoint(iphone down) {
+		@include breakpoint(iphone only) {
 			width: 500px;
 			height: 180px;
+			margin-top: 34px;
 		}
 
 		@include breakpoint(small only) {
@@ -116,15 +117,17 @@ header {
 
 			&-left {
 				@include breakpoint(small only) {
-					order: 2;
 					@include flex-grid-column(shrink, 0);
+					order: 2;
+					margin-top: -4px;
 				}
 				text-align: right;
 			}
 			&-right {
 				@include breakpoint(small only) {
-					order: 3;
 					@include flex-grid-column(shrink, 0);
+					order: 3;
+					margin-top: -4px;
 				}
 				text-align: left;
 				li {
