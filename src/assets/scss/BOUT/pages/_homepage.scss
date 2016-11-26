@@ -1,5 +1,26 @@
 section#landing h2 {margin: 50px 0;}
 
+section#landing {
+	.feature-set {
+		.content-blurb {
+			@include flex-grid-column(shrink, 60px);
+
+			@include breakpoint(medium only) {
+				@include breakpoint(850px down) {
+					@include flex-grid-column(shrink, 20px);
+				}
+			}
+		}
+		.phone-gap {
+			@include breakpoint(medium only) {
+				@include breakpoint(850px down) {
+					@include flex-grid-column(shrink, 20px);
+				}
+			}
+		}
+	}
+}
+
 .vid-container {
 	margin: 40px auto 0;
 
@@ -23,12 +44,17 @@ section#landing h2 {margin: 50px 0;}
 		}
 
 		@include breakpoint(iphone down) {
-			@include flex-grid-column(12, 140px);
+			@include flex-grid-column(12, 80px);
 			margin-bottom: 3rem;
 
 			&:last-child {
 				margin-bottom: 0;
 			}
+		}
+
+		@include breakpoint(420px down) {
+			padding-left: 0 !important;
+			padding-right: 0 !important;
 		}
 
 		&:first-child {
@@ -64,8 +90,9 @@ section#landing h2 {margin: 50px 0;}
 			float: none !important;
 		}
 
-		@include breakpoint(420px down) {
-			width: auto;
+		@include breakpoint(360px down) {
+			width: 160px;
+			height: 90px;
 		}
 	}
 

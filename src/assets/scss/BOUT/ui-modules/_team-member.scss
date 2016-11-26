@@ -38,6 +38,10 @@
       @include breakpoint(small down) {
         width: 420px;
       }
+
+      @include breakpoint(420px down) {
+        width: auto;
+      }
     }
     .avatar {
       @include breakpoint(medium up) {
@@ -49,7 +53,7 @@
         }
       }
     }
-    
+
     .name {
       h4 {
         margin: 0 auto;

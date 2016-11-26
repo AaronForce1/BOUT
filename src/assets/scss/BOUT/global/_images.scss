@@ -23,5 +23,10 @@ $module: '.icon';
     top: 50%;
     margin-top: -21px;
     text-align: center;
+
+    @include breakpoint(420px down) {
+      height: 26px;
+      margin-top: -13px;
+    }
   }
 }

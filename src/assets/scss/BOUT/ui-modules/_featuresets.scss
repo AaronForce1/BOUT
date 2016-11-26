@@ -47,7 +47,7 @@
 	}
 
 	.content-blurb {
-		@include flex-grid-column(6, 50px);
+		@include flex-grid-column(null, 20px);
 
 		@include breakpoint(iphone down) {
 			@include flex-grid-column(12);

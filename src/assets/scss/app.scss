@@ -53,4 +53,6 @@
 
 // Custom Dev - Uses gulp-sass-glob
 @import "components/*";
-@import "BOUT/**/*"
+@import "BOUT/global/**/*";
+@import "BOUT/ui-modules/**/*";
+@import "BOUT/pages/**/*";

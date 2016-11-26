@@ -24,7 +24,7 @@ section {
     &:last-of-type {
       // border-radius: 2rem 2rem 0 0;
       &.lt-section-padding-medium {
-        padding-bottom: 6.25rem;
+        padding-bottom: 4rem;
 
         + footer {
           margin-top: -5rem;
@@ -52,13 +52,6 @@ footer {
     margin: 0;
     padding: 0;
     padding-bottom: 47px;
-  }
-}
-
-.columns, .column {
-  @include breakpoint(small only) {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
   }
 }
 

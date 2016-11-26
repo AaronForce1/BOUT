@@ -5,18 +5,39 @@
 
 .iconBlocks { /* Container for icons and text next to iPhones */
 	&.row {
-		width: 550px;
-		@include breakpoint(medium only) {
-			width: 430px;
+		width: 800px;
+		margin: 0 auto;
+
+		@include breakpoint(large only) {
+			width: 620px;
 		}
+
+		@include breakpoint(medium only) {
+			width: 500px;
+
+			@include breakpoint(900px down) {
+				width: 380px;
+			}
+		}
+
 		@include breakpoint(iphone only) {
 			width: 600px;
+
+			@include breakpoint(660px down) {
+				width: 540px;
+			}
 		}
+
 		@include breakpoint(small only) {
 			width: 500px;
-		}
-		@include breakpoint(iphone down) {
-			margin: 0 auto;
+
+			@include breakpoint(555px down) {
+				width: 460px;
+			}
+
+			@include breakpoint(520px down) {
+				width: auto;
+			}
 		}
 
 		&>.columns, &>.column {
@@ -63,6 +84,11 @@
 		h4 {
 			width: 174px;
 			margin: 0 auto;
+
+			@include breakpoint(430px down) {
+				width: auto;
+				font-size: 16px;
+			}
 		}
 
 		@include breakpoint(large up) {
