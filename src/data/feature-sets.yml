@@ -2,7 +2,7 @@ app:
   -
     title: "Profile"
     description: ""
-    icon: ""
+    icon: "/assets/img/app-covers/profile.png"
     itemList:
       -
         title: ""
@@ -67,7 +67,7 @@ app:
   -
     title: "Navigation"
     description: ""
-    icon: ""
+    icon: "/assets/img/app-covers/navigation.png"
     itemList:
       -
         title: ""
@@ -82,7 +82,7 @@ app:
   -
     title: "Ergonomics"
     description: ""
-    icon: ""
+    icon: "/assets/img/app-covers/ergonomics.png"
     itemList:
       -
         title: ""
