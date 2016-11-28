@@ -20,7 +20,7 @@ app:
         svg: "icon-mediaMultiples"
         img: "app/mediaMultiples.svg"
   -
-    title: "Dicussions"
+    title: "Discussions"
     description: ""
     icon: "/assets/img/app-covers/discussions.png"
     itemList:
