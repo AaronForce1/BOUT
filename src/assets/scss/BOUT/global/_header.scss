@@ -71,9 +71,13 @@ header {
 	}
 
 	#logo {
-		background: url(../img/bout_logo.png) no-repeat;
-		width: 20px;
-		height: 33px;
+		background: url(../img/bout_logo.svg) no-repeat;
+		width: 26px;
+		height: 42px;
+			@include breakpoint (small only) {
+				width: 20px;
+				height: 32px;
+			}
 		background-size: contain;
 		position: absolute;
 		top: 50%;
