@@ -83,7 +83,7 @@ gulp.task('copy', function() {
 
 // Copy page templates into finished HTML files
 gulp.task('pages', function() {
-  gulp.src('./src/pages/*.{html,hbs,handlebars}')
+  gulp.src('./src/pages/**/*.{html,hbs,handlebars}')
     .pipe(panini({
       root: './src/pages/',
       layouts: './src/layouts/',
