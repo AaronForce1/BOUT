@@ -1,9 +1,25 @@
-#privacy-policy {
-  ol {
-    li {
-      p {
-        margin-bottom: .5rem;
-      }
+.documentation {
+  li {
+    font-weight: bold;
+    margin: 3rem 0;
+
+    p {
+      margin-top: 1rem;
+      margin-left: -1rem;
     }
   }
+  p {
+    margin-bottom: 1rem;
+    font-weight: normal;
+  }
 }
+
+// #privacy-policy {
+//   ol {
+//     li {
+//       p {
+//         margin-bottom: .5rem;
+//       }
+//     }
+//   }
+// }

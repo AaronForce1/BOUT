@@ -156,11 +156,16 @@ header {
 				margin: 0 1.75rem;
 
 				@include breakpoint(small only) {
-					margin: 0 1rem;
+					margin: 0 0.5rem;
 				}
 
 				a {
 					text-decoration: none;
+					font-size: 18px;
+
+					@include breakpoint(iphone down) {
+						font-size: 16px;
+					}
 					&:hover {
 						text-decoration: none;
 						color: $hover-primary;
