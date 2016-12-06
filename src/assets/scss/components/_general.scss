@@ -4,8 +4,8 @@ body {font-family: $body-font-family;}
 section h1 {
 	font-weight: normal;
 
-	@include breakpoint(small only) {
-		//font-size: 3rem;
+	@include breakpoint(iphone down) {
+		font-size: 4rem;
 	}
 }
 section h2 {
