@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+  - "iojs"
+  - "6"
+before_script:
+  - npm install -g gulp
+install:
+  - npm install
+script: gulp build
